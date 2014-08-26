@@ -1,0 +1,91 @@
+{
+  "name": "npmweb/package-usage",
+  "description": "Statistics on what Composer packages all of your webapps use",
+  "repositories": [
+    { "type": "vcs", "url": "git@bitbucket.org:npmweb/admin-theme" },
+    { "type": "vcs", "url": "git@bitbucket.org:npmweb/bitbucket-api" },
+    { "type": "vcs", "url": "git@bitbucket.org:npmweb/chms-models" },
+    { "type": "vcs", "url": "git@bitbucket.org:npmweb/escaping" },
+    { "type": "vcs", "url": "git@bitbucket.org:npmweb/escaping-js" },
+    { "type": "vcs", "url": "git@bitbucket.org:npmweb/laravel-auth" },
+    { "type": "vcs", "url": "git@bitbucket.org:npmweb/laravel-base" },
+    { "type": "vcs", "url": "git@bitbucket.org:npmweb/middleware-client" },
+    { "type": "vcs", "url": "git@bitbucket.org:npmweb/npm-reference" },
+    { "type": "vcs", "url": "git@github.com:npmweb/bbgrid" },
+    { "type": "vcs", "url": "git@github.com:npmweb/client-validation-generator" },
+    { "type": "vcs", "url": "git@github.com:npmweb/environment-banner" },
+    { "type": "vcs", "url": "git@github.com:npmweb/foundation_calendar_date_time_picker" },
+    { "type": "vcs", "url": "git@github.com:npmweb/jquery-validation" },
+    { "type": "vcs", "url": "git@github.com:npmweb/jquery-validation-bootstrap" },
+    { "type": "vcs", "url": "git@github.com:npmweb/jquery-validation-foundation" },
+    { "type": "vcs", "url": "git@github.com:npmweb/jquery-validator-custom-rules" },
+    { "type": "vcs", "url": "git@github.com:npmweb/laravel-forms" },
+    { "type": "vcs", "url": "git@github.com:npmweb/laravel-test" },
+    { "type": "vcs", "url": "git@github.com:npmweb/laravel-validator-custom-rules" },
+    { "type": "vcs", "url": "git@github.com:npmweb/meyer-reset" },
+    { "type": "vcs", "url": "git@github.com:npmweb/php-helpers" },
+    { "type": "vcs", "url": "git@github.com:npmweb/reference" },
+    { "type": "vcs", "url": "git@github.com:npmweb/tinymce" }
+  ],
+  "require": {
+    "laravel/laravel": "~4.2",
+    "components/foundation": "5.1.*",
+    "cpliakas/git-wrapper": "dev-master",
+    "knplabs/packagist-api": "1.*@dev",
+    "moment/moment": "2.6.*",
+    "npmweb/bbgrid": "dev-trunk@dev",
+    "npmweb/bitbucket-api": "dev-develop@dev",
+    "npmweb/client-validation-generator": "1.0.*",
+    "npmweb/environment-banner": "dev-master@dev",
+    "npmweb/escaping": "dev-master@dev",
+    "npmweb/escaping-js": "dev-master@dev",
+    "npmweb/jquery-validation-foundation": "dev-master@dev",
+    "npmweb/jquery-validator-custom-rules": "dev-master@dev",
+    "npmweb/laravel-auth": "dev-master@dev",
+    "npmweb/laravel-base": "dev-master@dev",
+    "npmweb/laravel-forms": "dev-master@dev",
+    "npmweb/laravel-test": "dev-master@dev",
+    "npmweb/laravel-validator-custom-rules": "dev-master@dev",
+    "npmweb/meyer-reset": "dev-master@dev",
+    "npmweb/middleware-client": "dev-master@dev",
+    "npmweb/npm-reference": "dev-master@dev",
+    "npmweb/php-helpers": "dev-master@dev",
+    "npmweb/tinymce": "dev-master@dev"
+  },
+  "require-dev": {
+    "doctrine/dbal": "v2.4.2",
+    "mockery/mockery": "dev-master@dev",
+    "fzaninotto/faker": "1.4.*@dev",
+    "phpunit/phpunit": "4.0.*",
+    "raveren/kint": "v0.9",
+    "way/laravel-test-helpers": "dev-master"
+  },
+  "autoload": {
+    "classmap": [
+      "app/commands",
+      "app/database/migrations",
+      "app/database/seeds"
+    ],
+    "psr-4": {
+      "NpmWeb\\MyAppName\\": "app/src/NpmWeb/MyAppName",
+      "NpmWeb\\Tests\\": "app/tests/NpmWeb/Tests"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php artisan optimize"
+    ],
+    "post-update-cmd": [
+      "php artisan clear-compiled",
+      "php artisan optimize"
+    ],
+    "post-create-project-cmd": [
+      "php artisan key:generate"
+    ]
+  },
+  "config": {
+    "preferred-install": "dist",
+    "component-dir": "endpoints/shared/components"
+  },
+  "minimum-stability": "dev"
+}
