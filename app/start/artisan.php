@@ -11,3 +11,4 @@
 |
 */
 
+Artisan::resolve(PackageUsage::class);

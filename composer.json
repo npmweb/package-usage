@@ -1,9 +1,14 @@
 {
   "name": "npmweb/package-usage",
   "description": "Statistics on what Composer packages all of your webapps use",
+  "authors": [
+    {
+      "name": "Josh Justice",
+      "email": "josh.justice@northpoint.org"
+    }
+  ],
   "repositories": [
     { "type": "vcs", "url": "git@bitbucket.org:npmweb/admin-theme" },
-    { "type": "vcs", "url": "git@bitbucket.org:npmweb/bitbucket-api" },
     { "type": "vcs", "url": "git@bitbucket.org:npmweb/chms-models" },
     { "type": "vcs", "url": "git@bitbucket.org:npmweb/escaping" },
     { "type": "vcs", "url": "git@bitbucket.org:npmweb/escaping-js" },
@@ -13,8 +18,10 @@
     { "type": "vcs", "url": "git@bitbucket.org:npmweb/npm-reference" },
     { "type": "vcs", "url": "git@github.com:npmweb/bbgrid" },
     { "type": "vcs", "url": "git@github.com:npmweb/client-validation-generator" },
+    { "type": "vcs", "url": "git@github.com:npmweb/composer-service" },
     { "type": "vcs", "url": "git@github.com:npmweb/environment-banner" },
     { "type": "vcs", "url": "git@github.com:npmweb/foundation_calendar_date_time_picker" },
+    { "type": "vcs", "url": "git@github.com:npmweb/git-api-client" },
     { "type": "vcs", "url": "git@github.com:npmweb/jquery-validation" },
     { "type": "vcs", "url": "git@github.com:npmweb/jquery-validation-bootstrap" },
     { "type": "vcs", "url": "git@github.com:npmweb/jquery-validation-foundation" },
@@ -30,15 +37,14 @@
   "require": {
     "laravel/laravel": "~4.2",
     "components/foundation": "5.1.*",
-    "cpliakas/git-wrapper": "dev-master",
-    "knplabs/packagist-api": "1.*@dev",
     "moment/moment": "2.6.*",
     "npmweb/bbgrid": "dev-trunk@dev",
-    "npmweb/bitbucket-api": "dev-develop@dev",
     "npmweb/client-validation-generator": "1.0.*",
+    "npmweb/composer-service": "dev-master@dev",
     "npmweb/environment-banner": "dev-master@dev",
     "npmweb/escaping": "dev-master@dev",
     "npmweb/escaping-js": "dev-master@dev",
+    "npmweb/git-api-client": "dev-master@dev",
     "npmweb/jquery-validation-foundation": "dev-master@dev",
     "npmweb/jquery-validator-custom-rules": "dev-master@dev",
     "npmweb/laravel-auth": "dev-master@dev",

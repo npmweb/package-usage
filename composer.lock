@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f44c4d632d309e6a7f20174ff3461258",
+    "hash": "fc53ef0802b7896d29adb6aa2449091a",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1571,6 +1571,46 @@
             "time": "2014-07-03 13:08:22"
         },
         {
+            "name": "npmweb/composer-service",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/npmweb/composer-service.git",
+                "reference": "ead771374c05aa1fcde32036841c43c49c9e9f16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/npmweb/composer-service/zipball/ead771374c05aa1fcde32036841c43c49c9e9f16",
+                "reference": "ead771374c05aa1fcde32036841c43c49c9e9f16",
+                "shasum": ""
+            },
+            "require": {
+                "cpliakas/git-wrapper": "dev-master",
+                "knplabs/packagist-api": "1.*@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "NpmWeb\\ComposerService": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josh Justice",
+                    "email": "josh.justice@northpoint.org"
+                }
+            ],
+            "description": "Provides access to information about Composer packages",
+            "support": {
+                "source": "https://github.com/npmweb/composer-service/tree/master",
+                "issues": "https://github.com/npmweb/composer-service/issues"
+            },
+            "time": "2014-08-27 12:19:58"
+        },
+        {
             "name": "npmweb/environment-banner",
             "version": "dev-master",
             "source": {
@@ -1646,6 +1686,45 @@
             },
             "description": "JS library for escaping content for the web, according to OWASP recommendations",
             "time": "2014-07-24 17:26:17"
+        },
+        {
+            "name": "npmweb/git-api-client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/npmweb/git-api-client.git",
+                "reference": "cd8ed6eac6aab7e2a2ea77865c82782c17dfc33e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/npmweb/git-api-client/zipball/cd8ed6eac6aab7e2a2ea77865c82782c17dfc33e",
+                "reference": "cd8ed6eac6aab7e2a2ea77865c82782c17dfc33e",
+                "shasum": ""
+            },
+            "require": {
+                "npmweb/bitbucket-api": "dev-develop@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "NpmWeb\\GitApiClient": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josh Justice",
+                    "email": "josh.justice@northpoint.org"
+                }
+            ],
+            "description": "Provides access to information from Git APIs",
+            "support": {
+                "source": "https://github.com/npmweb/git-api-client/tree/master",
+                "issues": "https://github.com/npmweb/git-api-client/issues"
+            },
+            "time": "2014-08-27 12:18:13"
         },
         {
             "name": "npmweb/jquery-validation",
@@ -1825,12 +1904,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/laravel-forms.git",
-                "reference": "7b8384a90a98f6af223f25c85ab68bdead0460ee"
+                "reference": "7f18429e1f3991fee78bc1e561a4df34e4add3c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/laravel-forms/zipball/7b8384a90a98f6af223f25c85ab68bdead0460ee",
-                "reference": "7b8384a90a98f6af223f25c85ab68bdead0460ee",
+                "url": "https://api.github.com/repos/npmweb/laravel-forms/zipball/7f18429e1f3991fee78bc1e561a4df34e4add3c2",
+                "reference": "7f18429e1f3991fee78bc1e561a4df34e4add3c2",
                 "shasum": ""
             },
             "require": {
@@ -1856,7 +1935,7 @@
                 "source": "https://github.com/npmweb/laravel-forms/tree/master",
                 "issues": "https://github.com/npmweb/laravel-forms/issues"
             },
-            "time": "2014-08-25 10:44:39"
+            "time": "2014-08-26 20:47:10"
         },
         {
             "name": "npmweb/laravel-test",
@@ -2460,12 +2539,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "62478c4c4ed84939a5457b15f9b978b58d0db849"
+                "reference": "8a2bcc6045e92acfbfea252cb6b444bc8c3f171e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/62478c4c4ed84939a5457b15f9b978b58d0db849",
-                "reference": "62478c4c4ed84939a5457b15f9b978b58d0db849",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/8a2bcc6045e92acfbfea252cb6b444bc8c3f171e",
+                "reference": "8a2bcc6045e92acfbfea252cb6b444bc8c3f171e",
                 "shasum": ""
             },
             "require": {
@@ -2504,7 +2583,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2014-07-28 09:34:50"
+            "time": "2014-08-27 09:29:44"
         },
         {
             "name": "symfony/browser-kit",
@@ -2733,12 +2812,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DomCrawler.git",
-                "reference": "9cb8aaea71fabae517ca007ca4b639e96f490c5e"
+                "reference": "27499e5951ef3d5731efe4db7481f26a68d75258"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/9cb8aaea71fabae517ca007ca4b639e96f490c5e",
-                "reference": "9cb8aaea71fabae517ca007ca4b639e96f490c5e",
+                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/27499e5951ef3d5731efe4db7481f26a68d75258",
+                "reference": "27499e5951ef3d5731efe4db7481f26a68d75258",
                 "shasum": ""
             },
             "require": {
@@ -2777,7 +2856,7 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "http://symfony.com",
-            "time": "2014-08-05 09:00:40"
+            "time": "2014-08-26 14:16:33"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3110,12 +3189,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Routing.git",
-                "reference": "1c285e6fffaa026c8073a387f403b1052d61ed95"
+                "reference": "de58587ae3fb17fdc802893cf934bbb03e6b8eb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Routing/zipball/1c285e6fffaa026c8073a387f403b1052d61ed95",
-                "reference": "1c285e6fffaa026c8073a387f403b1052d61ed95",
+                "url": "https://api.github.com/repos/symfony/Routing/zipball/de58587ae3fb17fdc802893cf934bbb03e6b8eb5",
+                "reference": "de58587ae3fb17fdc802893cf934bbb03e6b8eb5",
                 "shasum": ""
             },
             "require": {
@@ -3167,7 +3246,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2014-07-28 13:20:46"
+            "time": "2014-08-26 14:16:33"
         },
         {
             "name": "symfony/security-core",
@@ -3176,12 +3255,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-core.git",
-                "reference": "315ff8340602bbd1bb48ea6b0c69fd90e8aaffa1"
+                "reference": "04cffc1567f2d7b33a58e655a497e120c7b87ab9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-core/zipball/315ff8340602bbd1bb48ea6b0c69fd90e8aaffa1",
-                "reference": "315ff8340602bbd1bb48ea6b0c69fd90e8aaffa1",
+                "url": "https://api.github.com/repos/symfony/security-core/zipball/04cffc1567f2d7b33a58e655a497e120c7b87ab9",
+                "reference": "04cffc1567f2d7b33a58e655a497e120c7b87ab9",
                 "shasum": ""
             },
             "require": {
@@ -3229,7 +3308,7 @@
             ],
             "description": "Symfony Security Component - Core Library",
             "homepage": "http://symfony.com",
-            "time": "2014-08-06 12:45:51"
+            "time": "2014-08-26 14:16:33"
         },
         {
             "name": "symfony/translation",
@@ -4007,17 +4086,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "980a02b40496a25ce38acb4d3f4949b77abf9f20"
+                "reference": "15a719c78af351a7b7cf3e390d28c9f23ae8fbbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/980a02b40496a25ce38acb4d3f4949b77abf9f20",
-                "reference": "980a02b40496a25ce38acb4d3f4949b77abf9f20",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/15a719c78af351a7b7cf3e390d28c9f23ae8fbbb",
+                "reference": "15a719c78af351a7b7cf3e390d28c9f23ae8fbbb",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
                 "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.2"
             },
             "type": "library",
             "extra": {
@@ -4027,7 +4109,7 @@
             },
             "autoload": {
                 "classmap": [
-                    "PHP/"
+                    "src/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -4037,8 +4119,7 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sb@sebastian-bergmann.de",
-                    "role": "lead"
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Wrapper around PHP's tokenizer extension.",
@@ -4046,7 +4127,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2014-08-14 16:51:26"
+            "time": "2014-08-27 08:24:49"
         },
         {
             "name": "phpunit/phpunit",
@@ -4519,13 +4600,12 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "cpliakas/git-wrapper": 20,
-        "knplabs/packagist-api": 20,
         "npmweb/bbgrid": 20,
-        "npmweb/bitbucket-api": 20,
+        "npmweb/composer-service": 20,
         "npmweb/environment-banner": 20,
         "npmweb/escaping": 20,
         "npmweb/escaping-js": 20,
+        "npmweb/git-api-client": 20,
         "npmweb/jquery-validation-foundation": 20,
         "npmweb/jquery-validator-custom-rules": 20,
         "npmweb/laravel-auth": 20,

@@ -1,8 +1,7 @@
-NPM Laravel Template
-====================
+Package Usage
+=============
 
-Base project for Laravel web applications, with NPM-specific
-configuration and standards
+Statistics on what Composer packages all of your webapps use
 
 Installation
 ============
