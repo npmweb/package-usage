@@ -1,6 +1,7 @@
 {
   "name": "npmweb/package-usage",
   "description": "Statistics on what Composer packages all of your webapps use",
+  "license": "MIT",
   "authors": [
     {
       "name": "Josh Justice",
