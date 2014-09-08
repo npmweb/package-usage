@@ -1,4 +1,4 @@
-<?php
+<?php namespace NpmWeb\PackageUsage\Commands;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
@@ -6,7 +6,7 @@ use Symfony\Component\Console\Input\InputArgument;
 
 use NpmWeb\PackageUsage\Services\PackageUsageService;
 
-class PackageUsage extends Command {
+class UsageUpdateCommand extends Command {
 
     protected $git;
 
@@ -15,7 +15,7 @@ class PackageUsage extends Command {
      *
      * @var string
      */
-    protected $name = 'package:usage';
+    protected $name = 'usage:update';
 
     /**
      * The console command description.

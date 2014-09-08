@@ -11,5 +11,5 @@
 |
 */
 
-Artisan::resolve(PackageUsage::class);
+Artisan::resolve(NpmWeb\PackageUsage\Commands\UsageUpdateCommand::class);
 Artisan::resolve(NpmWeb\PackageUsage\Commands\UsageShowCommand::class);
