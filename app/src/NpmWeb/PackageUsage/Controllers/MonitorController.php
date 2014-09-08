@@ -3,9 +3,8 @@
 namespace NpmWeb\PackageUsage\Controllers;
 
 use View;
-use NpmWeb\LaravelBase\Controllers\BaseController;
 
-class MonitorController extends BaseController {
+class MonitorController extends \Controller {
 
     public function index()
     {

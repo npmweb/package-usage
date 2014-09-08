@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fc53ef0802b7896d29adb6aa2449091a",
+    "hash": "ffaee121a1b75a34bece0ff630375c50",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -12,20 +12,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mtdowling/ClassPreloader.git",
-                "reference": "2c9f3bcbab329570c57339895bd11b5dd3b00877"
+                "reference": "f4a1c082618343b6fb1f484e9830b92dbe90dcf2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mtdowling/ClassPreloader/zipball/2c9f3bcbab329570c57339895bd11b5dd3b00877",
-                "reference": "2c9f3bcbab329570c57339895bd11b5dd3b00877",
+                "url": "https://api.github.com/repos/mtdowling/ClassPreloader/zipball/f4a1c082618343b6fb1f484e9830b92dbe90dcf2",
+                "reference": "f4a1c082618343b6fb1f484e9830b92dbe90dcf2",
                 "shasum": ""
             },
             "require": {
-                "nikic/php-parser": "~0.9",
+                "nikic/php-parser": "~1.0@beta",
                 "php": ">=5.3.3",
                 "symfony/console": "~2.1",
                 "symfony/filesystem": "~2.1",
                 "symfony/finder": "~2.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
             },
             "bin": [
                 "classpreloader.php"
@@ -33,58 +36,12 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "ClassPreloader": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Helps class loading performance by generating a single PHP file containing all of the autoloaded files for a specific use case",
-            "keywords": [
-                "autoload",
-                "class",
-                "preload"
-            ],
-            "time": "2014-03-12 00:05:31"
-        },
-        {
-            "name": "components/backbone",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/components/backbone.git",
-                "reference": "4d3d6ebfa14add6cd917cc380e889844be31f681"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/components/backbone/zipball/4d3d6ebfa14add6cd917cc380e889844be31f681",
-                "reference": "4d3d6ebfa14add6cd917cc380e889844be31f681",
-                "shasum": ""
-            },
-            "require": {
-                "components/underscore": ">=1.4.3"
-            },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "backbone.js"
-                    ],
-                    "files": [
-                        "backbone-min.js"
-                    ],
-                    "shim": {
-                        "deps": [
-                            "underscore"
-                        ],
-                        "exports": "Backbone"
-                    }
+                "psr-4": {
+                    "ClassPreloader\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -93,22 +50,21 @@
             ],
             "authors": [
                 {
-                    "name": "Jeremy Ashkenas",
-                    "email": "jeremy@documentcloud.org"
+                    "name": "Graham Campbell",
+                    "email": "graham@mineuk.com"
+                },
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com"
                 }
             ],
-            "description": "Give your JS App some Backbone with Models, Views, Collections, and Events.",
-            "homepage": "http://backbonejs.org",
+            "description": "Helps class loading performance by generating a single PHP file containing all of the autoloaded files for a specific use case",
             "keywords": [
-                "browser",
-                "client",
-                "controller",
-                "model",
-                "router",
-                "server",
-                "view"
+                "autoload",
+                "class",
+                "preload"
             ],
-            "time": "2013-12-13 12:10:45"
+            "time": "2014-09-07 10:18:59"
         },
         {
             "name": "components/foundation",
@@ -317,59 +273,6 @@
             "description": "Normalize.css is a customisable CSS file that makes browsers render all elements more consistently and in line with modern standards.",
             "homepage": "http://necolas.github.com/normalize.css/",
             "time": "2014-04-24 15:15:29"
-        },
-        {
-            "name": "components/underscore",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/components/underscore.git",
-                "reference": "5319dd48d877d8c1ad217ec7851e840d0065c25f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/components/underscore/zipball/5319dd48d877d8c1ad217ec7851e840d0065c25f",
-                "reference": "5319dd48d877d8c1ad217ec7851e840d0065c25f",
-                "shasum": ""
-            },
-            "require": {
-                "robloach/component-installer": "*"
-            },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "underscore.js"
-                    ],
-                    "files": [
-                        "underscore-min.js",
-                        "underscore-min.map"
-                    ],
-                    "shim": {
-                        "exports": "_"
-                    }
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jeremy Ashkenas",
-                    "email": "jeremy@documentcloud.org"
-                }
-            ],
-            "description": "JavaScript's functional programming helper library.",
-            "homepage": "http://underscorejs.org",
-            "keywords": [
-                "browser",
-                "client",
-                "functional",
-                "server",
-                "util"
-            ],
-            "time": "2014-01-13 12:26:44"
         },
         {
             "name": "cpliakas/git-wrapper",
@@ -592,67 +495,82 @@
             "time": "2014-07-11 05:56:54"
         },
         {
-            "name": "guzzle/guzzle",
-            "version": "v3.8.1",
+            "name": "guzzle/common",
+            "version": "v3.9.2",
+            "target-dir": "Guzzle/Common",
             "source": {
                 "type": "git",
-                "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "4de0618a01b34aa1c8c33a3f13f396dcd3882eba"
+                "url": "https://github.com/guzzle/common.git",
+                "reference": "2e36af7cf2ce3ea1f2d7c2831843b883a8e7b7dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/4de0618a01b34aa1c8c33a3f13f396dcd3882eba",
-                "reference": "4de0618a01b34aa1c8c33a3f13f396dcd3882eba",
+                "url": "https://api.github.com/repos/guzzle/common/zipball/2e36af7cf2ce3ea1f2d7c2831843b883a8e7b7dc",
+                "reference": "2e36af7cf2ce3ea1f2d7c2831843b883a8e7b7dc",
                 "shasum": ""
             },
             "require": {
-                "ext-curl": "*",
-                "php": ">=5.3.3",
+                "php": ">=5.3.2",
                 "symfony/event-dispatcher": ">=2.1"
-            },
-            "replace": {
-                "guzzle/batch": "self.version",
-                "guzzle/cache": "self.version",
-                "guzzle/common": "self.version",
-                "guzzle/http": "self.version",
-                "guzzle/inflection": "self.version",
-                "guzzle/iterator": "self.version",
-                "guzzle/log": "self.version",
-                "guzzle/parser": "self.version",
-                "guzzle/plugin": "self.version",
-                "guzzle/plugin-async": "self.version",
-                "guzzle/plugin-backoff": "self.version",
-                "guzzle/plugin-cache": "self.version",
-                "guzzle/plugin-cookie": "self.version",
-                "guzzle/plugin-curlauth": "self.version",
-                "guzzle/plugin-error-response": "self.version",
-                "guzzle/plugin-history": "self.version",
-                "guzzle/plugin-log": "self.version",
-                "guzzle/plugin-md5": "self.version",
-                "guzzle/plugin-mock": "self.version",
-                "guzzle/plugin-oauth": "self.version",
-                "guzzle/service": "self.version",
-                "guzzle/stream": "self.version"
-            },
-            "require-dev": {
-                "doctrine/cache": "*",
-                "monolog/monolog": "1.*",
-                "phpunit/phpunit": "3.7.*",
-                "psr/log": "1.0.*",
-                "symfony/class-loader": "*",
-                "zendframework/zend-cache": "<2.3",
-                "zendframework/zend-log": "<2.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.8-dev"
+                    "dev-master": "3.7-dev"
                 }
             },
             "autoload": {
                 "psr-0": {
-                    "Guzzle": "src/",
-                    "Guzzle\\Tests": "tests/"
+                    "Guzzle\\Common": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Common libraries used by Guzzle",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "collection",
+                "common",
+                "event",
+                "exception"
+            ],
+            "time": "2014-08-11 04:32:36"
+        },
+        {
+            "name": "guzzle/http",
+            "version": "v3.9.2",
+            "target-dir": "Guzzle/Http",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/http.git",
+                "reference": "1e8dd1e2ba9dc42332396f39fbfab950b2301dc5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/http/zipball/1e8dd1e2ba9dc42332396f39fbfab950b2301dc5",
+                "reference": "1e8dd1e2ba9dc42332396f39fbfab950b2301dc5",
+                "shasum": ""
+            },
+            "require": {
+                "guzzle/common": "self.version",
+                "guzzle/parser": "self.version",
+                "guzzle/stream": "self.version",
+                "php": ">=5.3.2"
+            },
+            "suggest": {
+                "ext-curl": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Guzzle\\Http": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -664,24 +582,115 @@
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
-                },
-                {
-                    "name": "Guzzle Community",
-                    "homepage": "https://github.com/guzzle/guzzle/contributors"
                 }
             ],
-            "description": "Guzzle is a PHP HTTP client library and framework for building RESTful web service clients",
+            "description": "HTTP libraries used by Guzzle",
             "homepage": "http://guzzlephp.org/",
             "keywords": [
+                "Guzzle",
                 "client",
                 "curl",
-                "framework",
                 "http",
-                "http client",
-                "rest",
-                "web service"
+                "http client"
             ],
-            "time": "2014-01-28 22:29:15"
+            "time": "2014-08-11 04:32:36"
+        },
+        {
+            "name": "guzzle/parser",
+            "version": "v3.9.2",
+            "target-dir": "Guzzle/Parser",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/parser.git",
+                "reference": "6874d171318a8e93eb6d224cf85e4678490b625c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/parser/zipball/6874d171318a8e93eb6d224cf85e4678490b625c",
+                "reference": "6874d171318a8e93eb6d224cf85e4678490b625c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Guzzle\\Parser": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Interchangeable parsers used by Guzzle",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "URI Template",
+                "cookie",
+                "http",
+                "message",
+                "url"
+            ],
+            "time": "2014-02-05 18:29:46"
+        },
+        {
+            "name": "guzzle/stream",
+            "version": "v3.9.2",
+            "target-dir": "Guzzle/Stream",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/stream.git",
+                "reference": "60c7fed02e98d2c518dae8f97874c8f4622100f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/stream/zipball/60c7fed02e98d2c518dae8f97874c8f4622100f0",
+                "reference": "60c7fed02e98d2c518dae8f97874c8f4622100f0",
+                "shasum": ""
+            },
+            "require": {
+                "guzzle/common": "self.version",
+                "php": ">=5.3.2"
+            },
+            "suggest": {
+                "guzzle/http": "To convert Guzzle request objects to PHP streams"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Guzzle\\Stream": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle stream wrapper component",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "Guzzle",
+                "component",
+                "stream"
+            ],
+            "time": "2014-05-01 21:36:02"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -783,24 +792,24 @@
         },
         {
             "name": "jeremeamia/SuperClosure",
-            "version": "1.0.1",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jeremeamia/super_closure.git",
-                "reference": "d05400085f7d4ae6f20ba30d36550836c0d061e8"
+                "reference": "dba99c01800510c2d78a15d8579a49673072f270"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jeremeamia/super_closure/zipball/d05400085f7d4ae6f20ba30d36550836c0d061e8",
-                "reference": "d05400085f7d4ae6f20ba30d36550836c0d061e8",
+                "url": "https://api.github.com/repos/jeremeamia/super_closure/zipball/dba99c01800510c2d78a15d8579a49673072f270",
+                "reference": "dba99c01800510c2d78a15d8579a49673072f270",
                 "shasum": ""
             },
             "require": {
-                "nikic/php-parser": "~0.9",
+                "nikic/php-parser": "dev-master",
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "~3.7"
+                "phpunit/phpunit": "3.7.*"
             },
             "type": "library",
             "autoload": {
@@ -817,7 +826,7 @@
                     "name": "Jeremy Lindblom"
                 }
             ],
-            "description": "Doing interesting things with closures like serialization.",
+            "description": "Doing interesting things with closures like serialization and partial function application.",
             "homepage": "https://github.com/jeremeamia/super_closure",
             "keywords": [
                 "closure",
@@ -827,7 +836,7 @@
                 "serialize",
                 "tokenizer"
             ],
-            "time": "2013-10-09 04:20:00"
+            "time": "2013-06-14 07:20:08"
         },
         {
             "name": "knplabs/packagist-api",
@@ -888,12 +897,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "1cf41836942a3ed66a95ee4ec2571435c2ec7278"
+                "reference": "7c9639d93558c96ade44f60a4d201b29d68c4d7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/1cf41836942a3ed66a95ee4ec2571435c2ec7278",
-                "reference": "1cf41836942a3ed66a95ee4ec2571435c2ec7278",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/7c9639d93558c96ade44f60a4d201b29d68c4d7b",
+                "reference": "7c9639d93558c96ade44f60a4d201b29d68c4d7b",
                 "shasum": ""
             },
             "require": {
@@ -954,7 +963,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-08-20 23:23:37"
+            "time": "2014-08-27 14:48:43"
         },
         {
             "name": "kriswallsmith/buzz",
@@ -1010,12 +1019,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "c57c8adab8a2db0939383b35c4249ec411deb928"
+                "reference": "def2787c9cc6a5821b16ecaec902c775da1cd569"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/c57c8adab8a2db0939383b35c4249ec411deb928",
-                "reference": "c57c8adab8a2db0939383b35c4249ec411deb928",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/def2787c9cc6a5821b16ecaec902c775da1cd569",
+                "reference": "def2787c9cc6a5821b16ecaec902c775da1cd569",
                 "shasum": ""
             },
             "require": {
@@ -1117,7 +1126,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-08-24 14:50:37"
+            "time": "2014-09-08 03:15:03"
         },
         {
             "name": "laravel/laravel",
@@ -1157,119 +1166,6 @@
                 "laravel"
             ],
             "time": "2014-06-01 18:16:30"
-        },
-        {
-            "name": "laravelbook/ardent",
-            "version": "v2.4.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravelbook/ardent.git",
-                "reference": "0a0238b8040abc1c71401ce27a8edf2619fa5bed"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravelbook/ardent/zipball/0a0238b8040abc1c71401ce27a8edf2619fa5bed",
-                "reference": "0a0238b8040abc1c71401ce27a8edf2619fa5bed",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/database": "~4.1",
-                "illuminate/support": "~4.1",
-                "illuminate/validation": "~4.1",
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "LaravelBook\\Ardent": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Max Ehsan",
-                    "email": "contact@laravelbook.com",
-                    "homepage": "http://laravelbook.com/",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Igor Santos",
-                    "email": "igorsantos07+dev@gmail.com",
-                    "homepage": "http://www.igorsantos.com.br",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Self-validating smart models for Laravel 4's Eloquent O/RM",
-            "homepage": "http://laravelbook.com/",
-            "keywords": [
-                "Active Record",
-                "activerecord",
-                "database",
-                "eloquent",
-                "framework",
-                "laravel",
-                "orm",
-                "sql",
-                "validation"
-            ],
-            "time": "2014-02-25 20:39:04"
-        },
-        {
-            "name": "moment/moment",
-            "version": "2.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/moment/moment.git",
-                "reference": "37808f3f9dec14e37ad2b5cff45c70f63b021d17"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/moment/moment/zipball/37808f3f9dec14e37ad2b5cff45c70f63b021d17",
-                "reference": "37808f3f9dec14e37ad2b5cff45c70f63b021d17",
-                "shasum": ""
-            },
-            "require": {
-                "robloach/component-installer": "*"
-            },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "moment.js"
-                    ],
-                    "files": [
-                        "min/*.js",
-                        "lang/*.js"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tim Wood",
-                    "email": "washwithcare@gmail.com"
-                }
-            ],
-            "description": "Parse, validate, manipulate, and display dates in javascript.",
-            "homepage": "http://github.com/moment/moment/",
-            "keywords": [
-                "date",
-                "ender",
-                "format",
-                "i18n",
-                "l10n",
-                "moment",
-                "parse",
-                "time",
-                "validate"
-            ],
-            "time": "2014-04-12 16:37:48"
         },
         {
             "name": "monolog/monolog",
@@ -1391,32 +1287,32 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "0.9.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "ef70767475434bdb3615b43c327e2cae17ef12eb"
+                "reference": "7a3789f1a9a9b5588279ee29ec285770e2d14882"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/ef70767475434bdb3615b43c327e2cae17ef12eb",
-                "reference": "ef70767475434bdb3615b43c327e2cae17ef12eb",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/7a3789f1a9a9b5588279ee29ec285770e2d14882",
+                "reference": "7a3789f1a9a9b5588279ee29ec285770e2d14882",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "php": ">=5.2"
+                "php": ">=5.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.9-dev"
+                    "dev-master": "1.0-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "PHPParser": "lib/"
-                }
+                "files": [
+                    "lib/bootstrap.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1432,49 +1328,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2014-07-23 18:24:17"
-        },
-        {
-            "name": "npmweb/bbgrid",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/npmweb/bbGrid.git",
-                "reference": "9a86fde1d4a5f1de9af8029547d5ecba4171b59d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/bbGrid/zipball/9a86fde1d4a5f1de9af8029547d5ecba4171b59d",
-                "reference": "9a86fde1d4a5f1de9af8029547d5ecba4171b59d",
-                "shasum": ""
-            },
-            "require": {
-                "components/backbone": "1.1.*",
-                "robloach/component-installer": "*"
-            },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "bbGrid.js"
-                    ],
-                    "styles": [
-                        "css/bbGrid.css"
-                    ],
-                    "shim": {
-                        "deps": [
-                            "backbone",
-                            "jquery"
-                        ],
-                        "exports": "bbGrid"
-                    }
-                }
-            },
-            "description": "An extendable grid system (jqGrid like) developed on Backbone.js",
-            "support": {
-                "source": "https://github.com/npmweb/bbGrid/tree/master"
-            },
-            "time": "2014-08-24 17:13:12"
+            "time": "2014-08-31 15:05:11"
         },
         {
             "name": "npmweb/bitbucket-api",
@@ -1520,55 +1374,6 @@
                 "bitbucket"
             ],
             "time": "2014-08-25 11:41:43"
-        },
-        {
-            "name": "npmweb/chms-models",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@bitbucket.org:npmweb/chms-models",
-                "reference": "279688d2e6d309f256b4586b6e180f0f7d6d0e2a"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "NpmWeb\\Chms\\Models\\": "src"
-                }
-            },
-            "description": "Model classes for ChMS objects",
-            "time": "2014-02-20 20:58:06"
-        },
-        {
-            "name": "npmweb/client-validation-generator",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/npmweb/client-validation-generator.git",
-                "reference": "99a03ba5652bd664873c54a2fe4dbc194798fede"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/client-validation-generator/zipball/99a03ba5652bd664873c54a2fe4dbc194798fede",
-                "reference": "99a03ba5652bd664873c54a2fe4dbc194798fede",
-                "shasum": ""
-            },
-            "require-dev": {
-                "laravel/framework": "4.1.*",
-                "mockery/mockery": "dev-master@dev"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "NpmWeb\\ClientValidationGenerator\\": "src/",
-                    "NpmWeb\\Test\\": "tests/"
-                }
-            },
-            "description": "Server-side code to generate client-side validation, usually based on server-side validation rules from a different validation framework",
-            "support": {
-                "source": "https://github.com/npmweb/client-validation-generator/tree/master",
-                "issues": "https://github.com/npmweb/client-validation-generator/issues"
-            },
-            "time": "2014-07-03 13:08:22"
         },
         {
             "name": "npmweb/composer-service",
@@ -1646,48 +1451,6 @@
             "time": "2014-07-30 15:55:45"
         },
         {
-            "name": "npmweb/escaping",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@bitbucket.org:npmweb/escaping",
-                "reference": "23f906ceab15da7ead1958611d93947d5ba118b0"
-            },
-            "suggest": {
-                "ezyang/htmlpurifier": "To sanitize user-generated HTML"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/NpmWeb/Escaping/helpers.php"
-                ]
-            },
-            "description": "PHP library for escaping content for the web, according to OWASP recommendations",
-            "time": "2014-07-24 17:28:31"
-        },
-        {
-            "name": "npmweb/escaping-js",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@bitbucket.org:npmweb/escaping-js",
-                "reference": "c7e9a48cf5ee51d98d79e7e954e957b009ff677b"
-            },
-            "require": {
-                "robloach/component-installer": "*"
-            },
-            "type": "library",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "src/escaping.js"
-                    ]
-                }
-            },
-            "description": "JS library for escaping content for the web, according to OWASP recommendations",
-            "time": "2014-07-24 17:26:17"
-        },
-        {
             "name": "npmweb/git-api-client",
             "version": "dev-master",
             "source": {
@@ -1727,217 +1490,6 @@
             "time": "2014-08-27 12:18:13"
         },
         {
-            "name": "npmweb/jquery-validation",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/npmweb/jquery-validation.git",
-                "reference": "1bfbe26fadae9293cab4de2c4b07a8a6acd53b72"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/jquery-validation/zipball/1bfbe26fadae9293cab4de2c4b07a8a6acd53b72",
-                "reference": "1bfbe26fadae9293cab4de2c4b07a8a6acd53b72",
-                "shasum": ""
-            },
-            "require": {
-                "components/jquery": ">=1.6.4",
-                "robloach/component-installer": "*"
-            },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "jquery.validate.min.js",
-                        "additional-methods.min.js"
-                    ],
-                    "shim": {
-                        "deps": [
-                            "jquery"
-                        ]
-                    }
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "jQuery Validation plugin available as a Composer component",
-            "support": {
-                "source": "https://github.com/npmweb/jquery-validation/tree/master",
-                "issues": "https://github.com/npmweb/jquery-validation/issues"
-            },
-            "time": "2014-04-30 15:33:52"
-        },
-        {
-            "name": "npmweb/jquery-validation-foundation",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/npmweb/jquery-validation-foundation.git",
-                "reference": "65e8778d47bcc2b84893b8f209cc9ea7de7ee59d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/jquery-validation-foundation/zipball/65e8778d47bcc2b84893b8f209cc9ea7de7ee59d",
-                "reference": "65e8778d47bcc2b84893b8f209cc9ea7de7ee59d",
-                "shasum": ""
-            },
-            "require": {
-                "npmweb/jquery-validation": "dev-master@dev",
-                "robloach/component-installer": "*"
-            },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "jquery.validate.foundation.js"
-                    ],
-                    "shim": {
-                        "deps": [
-                            "jquery-validation"
-                        ]
-                    }
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "Extends jQuery Validation with default configs to work with Foundation 5 form CSS",
-            "support": {
-                "source": "https://github.com/npmweb/jquery-validation-foundation/tree/master",
-                "issues": "https://github.com/npmweb/jquery-validation-foundation/issues"
-            },
-            "time": "2014-08-14 11:11:06"
-        },
-        {
-            "name": "npmweb/jquery-validator-custom-rules",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/npmweb/jquery-validator-custom-rules.git",
-                "reference": "c1c35ccc4630a3ab3b0de3c03952ec8344956a3a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/jquery-validator-custom-rules/zipball/c1c35ccc4630a3ab3b0de3c03952ec8344956a3a",
-                "reference": "c1c35ccc4630a3ab3b0de3c03952ec8344956a3a",
-                "shasum": ""
-            },
-            "require": {
-                "robloach/component-installer": "*"
-            },
-            "type": "library",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "src/jquery.validate.custom.rules.js"
-                    ],
-                    "shim": {
-                        "deps": [
-                            "jquery-validation"
-                        ]
-                    }
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "Additional jQuery validator rules",
-            "support": {
-                "source": "https://github.com/npmweb/jquery-validator-custom-rules/tree/master",
-                "issues": "https://github.com/npmweb/jquery-validator-custom-rules/issues"
-            },
-            "time": "2014-08-04 18:45:56"
-        },
-        {
-            "name": "npmweb/laravel-auth",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@bitbucket.org:npmweb/laravel-auth",
-                "reference": "7644c3b9acfa77f8363fb7c6afc26b422c4623fb"
-            },
-            "require": {
-                "npmweb/chms-models": "dev-master"
-            },
-            "require-dev": {
-                "laravel/framework": "4.1.*",
-                "mockery/mockery": "dev-master@dev"
-            },
-            "suggest": {
-                "npmweb/middleware-client": "dev-master@dev"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "NpmWeb\\Auth\\": "src/",
-                    "NpmWeb\\Test\\": "tests/"
-                }
-            },
-            "description": "Custom authentication implementations for Laravel applications",
-            "time": "2014-07-29 18:31:56"
-        },
-        {
-            "name": "npmweb/laravel-base",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@bitbucket.org:npmweb/laravel-base",
-                "reference": "0b1c334e7b9f6cc70db77d54d2aaa7931dda8e62"
-            },
-            "require": {
-                "laravel/framework": "~4.1",
-                "laravelbook/ardent": "2.4.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "NpmWeb\\LaravelBase\\": "src/NpmWeb/LaravelBase"
-                }
-            },
-            "description": "Base classes for Laravel projects: controller and model",
-            "time": "2014-08-22 14:11:47"
-        },
-        {
-            "name": "npmweb/laravel-forms",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/npmweb/laravel-forms.git",
-                "reference": "7f18429e1f3991fee78bc1e561a4df34e4add3c2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/laravel-forms/zipball/7f18429e1f3991fee78bc1e561a4df34e4add3c2",
-                "reference": "7f18429e1f3991fee78bc1e561a4df34e4add3c2",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "~4.1",
-                "npmweb/client-validation-generator": "1.0.*"
-            },
-            "require-dev": {
-                "mockery/mockery": "dev-master@dev"
-            },
-            "suggest": {
-                "components/bootstrap": "3.2.*",
-                "components/foundation": "5.1.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "NpmWeb\\FormBuilder\\": "src/",
-                    "NpmWeb\\Test\\": "tests/"
-                }
-            },
-            "description": "Extends Laravel's FormBuilder to lay out form elements for Bootstrap or Foundation",
-            "support": {
-                "source": "https://github.com/npmweb/laravel-forms/tree/master",
-                "issues": "https://github.com/npmweb/laravel-forms/issues"
-            },
-            "time": "2014-08-26 20:47:10"
-        },
-        {
             "name": "npmweb/laravel-test",
             "version": "dev-master",
             "source": {
@@ -1975,52 +1527,6 @@
             "time": "2014-08-06 16:27:04"
         },
         {
-            "name": "npmweb/laravel-validator-custom-rules",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/npmweb/laravel-validator-custom-rules.git",
-                "reference": "ed2535d7cf06cf5503e475babee1548c1b533d9c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/laravel-validator-custom-rules/zipball/ed2535d7cf06cf5503e475babee1548c1b533d9c",
-                "reference": "ed2535d7cf06cf5503e475babee1548c1b533d9c",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": ">=4.1.0",
-                "illuminate/validation": ">=4.1.0",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "dev-master@dev",
-                "nesbot/carbon": "dev-master@dev",
-                "phpunit/phpunit": "4.0.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "NpmWeb\\LaravelValidatorCustomRules": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Josh Justice",
-                    "email": "josh.justice@northpoint.org"
-                }
-            ],
-            "description": "Additional custom validation rules",
-            "support": {
-                "source": "https://github.com/npmweb/laravel-validator-custom-rules/tree/1.0.0",
-                "issues": "https://github.com/npmweb/laravel-validator-custom-rules/issues"
-            },
-            "time": "2014-07-10 18:51:16"
-        },
-        {
             "name": "npmweb/meyer-reset",
             "version": "dev-master",
             "source": {
@@ -2050,46 +1556,6 @@
                 "source": "https://github.com/npmweb/meyer-reset/tree/master"
             },
             "time": "2014-08-20 19:46:59"
-        },
-        {
-            "name": "npmweb/middleware-client",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@bitbucket.org:npmweb/middleware-client",
-                "reference": "4bf2ad9e50b10cc2ce0b824508757c795da20246"
-            },
-            "require": {
-                "guzzle/guzzle": "3.8.x",
-                "npmweb/chms-models": "dev-master@dev"
-            },
-            "require-dev": {
-                "mockery/mockery": "dev-master@dev"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "NpmWeb\\MiddlewareClient\\": "src/",
-                    "NpmWeb\\Test\\": "tests/"
-                }
-            },
-            "description": "Client library for accessing the NPM middleware",
-            "time": "2014-06-04 19:40:28"
-        },
-        {
-            "name": "npmweb/npm-reference",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@bitbucket.org:npmweb/npm-reference",
-                "reference": "cd583d034105c0ba52017672454aa2296347a51a"
-            },
-            "require": {
-                "npmweb/reference": "dev-master@dev"
-            },
-            "type": "library",
-            "description": "Reference data storage and lookup, with both general and NPM-specific data.",
-            "time": "2014-08-25 10:41:38"
         },
         {
             "name": "npmweb/php-helpers",
@@ -2123,74 +1589,6 @@
                 "issues": "https://github.com/npmweb/php-helpers/issues"
             },
             "time": "2014-08-22 16:30:04"
-        },
-        {
-            "name": "npmweb/reference",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/npmweb/reference.git",
-                "reference": "6d3f2957d59e96b1b3d7f90e000ba83ddab41ec9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/reference/zipball/6d3f2957d59e96b1b3d7f90e000ba83ddab41ec9",
-                "reference": "6d3f2957d59e96b1b3d7f90e000ba83ddab41ec9",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "NpmWeb\\Reference\\": "src"
-                }
-            },
-            "description": "PHP library for accessing reference data, such as lists of US states, marital statuses, etc.",
-            "support": {
-                "source": "https://github.com/npmweb/reference/tree/master",
-                "issues": "https://github.com/npmweb/reference/issues"
-            },
-            "time": "2014-07-02 21:29:16"
-        },
-        {
-            "name": "npmweb/tinymce",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/npmweb/tinymce.git",
-                "reference": "334cb5156ded38f3b467f7ff4f6d99463427a78e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/tinymce/zipball/334cb5156ded38f3b467f7ff4f6d99463427a78e",
-                "reference": "334cb5156ded38f3b467f7ff4f6d99463427a78e",
-                "shasum": ""
-            },
-            "require": {
-                "robloach/component-installer": "*"
-            },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/tinymce/tinymce.min.js"
-                    ],
-                    "files": [
-                        "js/tinymce/langs/**",
-                        "js/tinymce/plugins/**",
-                        "js/tinymce/skins/**",
-                        "js/tinymce/themes/**"
-                    ]
-                }
-            },
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "WYSIWYG HTML editor",
-            "support": {
-                "source": "https://github.com/npmweb/tinymce/tree/master",
-                "issues": "https://github.com/npmweb/tinymce/issues"
-            },
-            "time": "2014-08-25 10:37:37"
         },
         {
             "name": "patchwork/utf8",
@@ -2254,12 +1652,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "e0868df0eca69b33b9d72fe5e2f361f0a41bf317"
+                "reference": "f2cab55fd542cf481ef2514c83ef864138edcbd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/e0868df0eca69b33b9d72fe5e2f361f0a41bf317",
-                "reference": "e0868df0eca69b33b9d72fe5e2f361f0a41bf317",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/f2cab55fd542cf481ef2514c83ef864138edcbd3",
+                "reference": "f2cab55fd542cf481ef2514c83ef864138edcbd3",
                 "shasum": ""
             },
             "require": {
@@ -2344,7 +1742,7 @@
                 "x.509",
                 "x509"
             ],
-            "time": "2014-08-25 13:16:23"
+            "time": "2014-09-07 10:43:22"
         },
         {
             "name": "predis/predis",
@@ -2702,12 +2100,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/CssSelector.git",
-                "reference": "e24b8215bf39a6a2ce0c262bc5b000724077afa9"
+                "reference": "143abf51b91e4517cde67d416bdf67a90cffa32d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/CssSelector/zipball/e24b8215bf39a6a2ce0c262bc5b000724077afa9",
-                "reference": "e24b8215bf39a6a2ce0c262bc5b000724077afa9",
+                "url": "https://api.github.com/repos/symfony/CssSelector/zipball/143abf51b91e4517cde67d416bdf67a90cffa32d",
+                "reference": "143abf51b91e4517cde67d416bdf67a90cffa32d",
                 "shasum": ""
             },
             "require": {
@@ -2730,23 +2128,21 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
                 },
                 {
                     "name": "Jean-François Simon",
                     "email": "jeanfrancois.simon@sensiolabs.com"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "http://symfony.com",
-            "time": "2014-07-09 09:05:48"
+            "time": "2014-08-31 03:22:04"
         },
         {
             "name": "symfony/debug",
@@ -2922,12 +2318,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "0eb05b75932460ef615b926caac9f6086cc022f5"
+                "reference": "75f5f5c8ff1497a2071f9c77484390087e379406"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/0eb05b75932460ef615b926caac9f6086cc022f5",
-                "reference": "0eb05b75932460ef615b926caac9f6086cc022f5",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/75f5f5c8ff1497a2071f9c77484390087e379406",
+                "reference": "75f5f5c8ff1497a2071f9c77484390087e379406",
                 "shasum": ""
             },
             "require": {
@@ -2950,19 +2346,17 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "http://symfony.com",
-            "time": "2014-07-09 14:44:54"
+            "time": "2014-09-04 21:09:17"
         },
         {
             "name": "symfony/finder",
@@ -2971,12 +2365,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "01284e19f7d2ce4bcd00282bf760ba061ef69c2e"
+                "reference": "f40854d1a19c339c7f969f8f6d6d6e9153311c4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/01284e19f7d2ce4bcd00282bf760ba061ef69c2e",
-                "reference": "01284e19f7d2ce4bcd00282bf760ba061ef69c2e",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/f40854d1a19c339c7f969f8f6d6d6e9153311c4c",
+                "reference": "f40854d1a19c339c7f969f8f6d6d6e9153311c4c",
                 "shasum": ""
             },
             "require": {
@@ -3009,7 +2403,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-08-14 16:10:54"
+            "time": "2014-09-03 09:00:14"
         },
         {
             "name": "symfony/http-foundation",
@@ -3018,12 +2412,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "66996cff6d0de1168f99e460464cd3fb35c192f5"
+                "reference": "cec87359655f901a11de336576851d3957449947"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/66996cff6d0de1168f99e460464cd3fb35c192f5",
-                "reference": "66996cff6d0de1168f99e460464cd3fb35c192f5",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/cec87359655f901a11de336576851d3957449947",
+                "reference": "cec87359655f901a11de336576851d3957449947",
                 "shasum": ""
             },
             "require": {
@@ -3062,7 +2456,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "http://symfony.com",
-            "time": "2014-08-18 09:01:49"
+            "time": "2014-09-03 09:00:14"
         },
         {
             "name": "symfony/http-kernel",
@@ -3071,12 +2465,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "c90d1811e3ed2f119de61aa63e7044cd5ca422a7"
+                "reference": "18bce9aefd7fb009bb21e6ec61d64d421e9d30df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/c90d1811e3ed2f119de61aa63e7044cd5ca422a7",
-                "reference": "c90d1811e3ed2f119de61aa63e7044cd5ca422a7",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/18bce9aefd7fb009bb21e6ec61d64d421e9d30df",
+                "reference": "18bce9aefd7fb009bb21e6ec61d64d421e9d30df",
                 "shasum": ""
             },
             "require": {
@@ -3133,7 +2527,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "http://symfony.com",
-            "time": "2014-08-11 09:10:42"
+            "time": "2014-09-03 12:51:22"
         },
         {
             "name": "symfony/process",
@@ -3142,12 +2536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "56db723e7122b9edab761d63c4019243d31ab011"
+                "reference": "8ee145f02b9b2cae97a3432335f7f4720ee56414"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/56db723e7122b9edab761d63c4019243d31ab011",
-                "reference": "56db723e7122b9edab761d63c4019243d31ab011",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/8ee145f02b9b2cae97a3432335f7f4720ee56414",
+                "reference": "8ee145f02b9b2cae97a3432335f7f4720ee56414",
                 "shasum": ""
             },
             "require": {
@@ -3180,7 +2574,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2014-08-08 15:50:54"
+            "time": "2014-09-03 20:47:09"
         },
         {
             "name": "symfony/routing",
@@ -3255,12 +2649,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-core.git",
-                "reference": "04cffc1567f2d7b33a58e655a497e120c7b87ab9"
+                "reference": "3294aea1af045eb67346257d364c3065cdda23b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-core/zipball/04cffc1567f2d7b33a58e655a497e120c7b87ab9",
-                "reference": "04cffc1567f2d7b33a58e655a497e120c7b87ab9",
+                "url": "https://api.github.com/repos/symfony/security-core/zipball/3294aea1af045eb67346257d364c3065cdda23b9",
+                "reference": "3294aea1af045eb67346257d364c3065cdda23b9",
                 "shasum": ""
             },
             "require": {
@@ -3308,7 +2702,7 @@
             ],
             "description": "Symfony Security Component - Core Library",
             "homepage": "http://symfony.com",
-            "time": "2014-08-26 14:16:33"
+            "time": "2014-09-03 09:22:15"
         },
         {
             "name": "symfony/translation",
@@ -3317,12 +2711,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Translation.git",
-                "reference": "ae573e45b099b1e2d332930ac626cd4270e09539"
+                "reference": "7526ad65f1961b2422ab33e4d3b05f92be16e5e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Translation/zipball/ae573e45b099b1e2d332930ac626cd4270e09539",
-                "reference": "ae573e45b099b1e2d332930ac626cd4270e09539",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/7526ad65f1961b2422ab33e4d3b05f92be16e5e2",
+                "reference": "7526ad65f1961b2422ab33e4d3b05f92be16e5e2",
                 "shasum": ""
             },
             "require": {
@@ -3363,7 +2757,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "http://symfony.com",
-            "time": "2014-07-28 13:20:46"
+            "time": "2014-09-03 09:00:14"
         }
     ],
     "packages-dev": [
@@ -3373,12 +2767,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "e93f3b718c421daddff58c4a4af1aee574472cd6"
+                "reference": "6634069ada56fd169de5e3ca29bc407d9d9a11b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/e93f3b718c421daddff58c4a4af1aee574472cd6",
-                "reference": "e93f3b718c421daddff58c4a4af1aee574472cd6",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/6634069ada56fd169de5e3ca29bc407d9d9a11b6",
+                "reference": "6634069ada56fd169de5e3ca29bc407d9d9a11b6",
                 "shasum": ""
             },
             "require": {
@@ -3433,7 +2827,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2014-07-27 16:33:24"
+            "time": "2014-09-04 13:31:34"
         },
         {
             "name": "doctrine/cache",
@@ -3441,12 +2835,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "72121e68265cd8b37f9b69778308251f6c5133e4"
+                "reference": "daba57d377f2620ce0355797acad538fc682e3a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/72121e68265cd8b37f9b69778308251f6c5133e4",
-                "reference": "72121e68265cd8b37f9b69778308251f6c5133e4",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/daba57d377f2620ce0355797acad538fc682e3a4",
+                "reference": "daba57d377f2620ce0355797acad538fc682e3a4",
                 "shasum": ""
             },
             "require": {
@@ -3502,7 +2896,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2014-08-05 12:51:19"
+            "time": "2014-08-30 05:24:19"
         },
         {
             "name": "doctrine/collections",
@@ -3822,12 +3216,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/padraic/mockery.git",
-                "reference": "217e04f061861c88ce56677225f8b0cf1eac9e79"
+                "reference": "95a4855380dc70176c51807c678fb3bd6198529a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/padraic/mockery/zipball/217e04f061861c88ce56677225f8b0cf1eac9e79",
-                "reference": "217e04f061861c88ce56677225f8b0cf1eac9e79",
+                "url": "https://api.github.com/repos/padraic/mockery/zipball/95a4855380dc70176c51807c678fb3bd6198529a",
+                "reference": "95a4855380dc70176c51807c678fb3bd6198529a",
                 "shasum": ""
             },
             "require": {
@@ -3880,7 +3274,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2014-08-11 12:38:44"
+            "time": "2014-09-03 10:11:10"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -3888,25 +3282,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "6d196af48e8c100a3ae881940123e693da5a9217"
+                "reference": "62f8cd539ab2e2c25077aeb5f5ed3209acee3612"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/6d196af48e8c100a3ae881940123e693da5a9217",
-                "reference": "6d196af48e8c100a3ae881940123e693da5a9217",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/62f8cd539ab2e2c25077aeb5f5ed3209acee3612",
+                "reference": "62f8cd539ab2e2c25077aeb5f5ed3209acee3612",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
-                "phpunit/php-file-iterator": "~1.3.1",
-                "phpunit/php-text-template": "~1.2.0",
-                "phpunit/php-token-stream": "~1.2.2",
-                "sebastian/environment": "~1.0.0",
-                "sebastian/version": "~1.0.3"
+                "phpunit/php-file-iterator": "~1.3",
+                "phpunit/php-text-template": "~1.2",
+                "phpunit/php-token-stream": "~1.3",
+                "sebastian/environment": "~1.0",
+                "sebastian/version": "~1.0"
             },
             "require-dev": {
                 "ext-xdebug": ">=2.1.4",
-                "phpunit/phpunit": "~4.0.14"
+                "phpunit/phpunit": "~4.1"
             },
             "suggest": {
                 "ext-dom": "*",
@@ -3945,7 +3339,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-08-06 06:39:42"
+            "time": "2014-09-01 22:04:15"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -4086,12 +3480,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "15a719c78af351a7b7cf3e390d28c9f23ae8fbbb"
+                "reference": "f8d5d08c56de5cfd592b3340424a81733259a876"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/15a719c78af351a7b7cf3e390d28c9f23ae8fbbb",
-                "reference": "15a719c78af351a7b7cf3e390d28c9f23ae8fbbb",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/f8d5d08c56de5cfd592b3340424a81733259a876",
+                "reference": "f8d5d08c56de5cfd592b3340424a81733259a876",
                 "shasum": ""
             },
             "require": {
@@ -4104,7 +3498,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2-dev"
+                    "dev-master": "1.3-dev"
                 }
             },
             "autoload": {
@@ -4127,7 +3521,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2014-08-27 08:24:49"
+            "time": "2014-08-31 06:12:13"
         },
         {
             "name": "phpunit/phpunit",
@@ -4515,12 +3909,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "d84b97a12046b2c34e8457626b9f2b72dec0c183"
+                "reference": "b5922e0afc21531b84ddef806e66ba4f84f770b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/d84b97a12046b2c34e8457626b9f2b72dec0c183",
-                "reference": "d84b97a12046b2c34e8457626b9f2b72dec0c183",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/b5922e0afc21531b84ddef806e66ba4f84f770b0",
+                "reference": "b5922e0afc21531b84ddef806e66ba4f84f770b0",
                 "shasum": ""
             },
             "require": {
@@ -4553,7 +3947,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2014-08-05 09:07:51"
+            "time": "2014-08-31 03:28:38"
         },
         {
             "name": "way/laravel-test-helpers",
@@ -4600,24 +3994,12 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "npmweb/bbgrid": 20,
         "npmweb/composer-service": 20,
         "npmweb/environment-banner": 20,
-        "npmweb/escaping": 20,
-        "npmweb/escaping-js": 20,
         "npmweb/git-api-client": 20,
-        "npmweb/jquery-validation-foundation": 20,
-        "npmweb/jquery-validator-custom-rules": 20,
-        "npmweb/laravel-auth": 20,
-        "npmweb/laravel-base": 20,
-        "npmweb/laravel-forms": 20,
         "npmweb/laravel-test": 20,
-        "npmweb/laravel-validator-custom-rules": 20,
         "npmweb/meyer-reset": 20,
-        "npmweb/middleware-client": 20,
-        "npmweb/npm-reference": 20,
         "npmweb/php-helpers": 20,
-        "npmweb/tinymce": 20,
         "mockery/mockery": 20,
         "fzaninotto/faker": 20,
         "way/laravel-test-helpers": 20

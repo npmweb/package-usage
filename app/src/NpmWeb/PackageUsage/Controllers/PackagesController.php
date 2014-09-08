@@ -2,16 +2,10 @@
 
 namespace NpmWeb\PackageUsage\Controllers;
 
-use Auth;
-use Input;
-use Redirect;
-use Request;
-use Response;
 use View;
-use NpmWeb\LaravelBase\Controllers\BaseController;
 use NpmWeb\PackageUsage\Services\PackageUsageServiceInterface;
 
-class PackagesController extends BaseController {
+class PackagesController extends \Controller {
 
     protected $packages;
     protected $modelName = 'packages';

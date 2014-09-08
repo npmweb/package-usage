@@ -80,7 +80,7 @@ return array(
 
     'providers' => array(
         'Illuminate\Foundation\Providers\ArtisanServiceProvider',
-        // 'Illuminate\Auth\AuthServiceProvider',
+        'Illuminate\Auth\AuthServiceProvider',
         'Illuminate\Cache\CacheServiceProvider',
         'Illuminate\Session\CommandsServiceProvider',
         'Illuminate\Foundation\Providers\ConsoleSupportServiceProvider',
@@ -90,7 +90,7 @@ return array(
         'Illuminate\Encryption\EncryptionServiceProvider',
         'Illuminate\Filesystem\FilesystemServiceProvider',
         'Illuminate\Hashing\HashServiceProvider',
-        // 'Illuminate\Html\HtmlServiceProvider',
+        'Illuminate\Html\HtmlServiceProvider',
         'Illuminate\Log\LogServiceProvider',
         'Illuminate\Mail\MailServiceProvider',
         'Illuminate\Database\MigrationServiceProvider',
@@ -107,14 +107,9 @@ return array(
         'Illuminate\Workbench\WorkbenchServiceProvider',
 
         // custom
-        'NpmWeb\Auth\AuthServiceProvider',
-        'NpmWeb\ClientValidationGenerator\Laravel\ClientValidationServiceProvider',
         'NpmWeb\ComposerService\Laravel\ComposerServiceServiceProvider',
-        'NpmWeb\FormBuilder\HtmlServiceProvider',
         'NpmWeb\GitApiClient\Laravel\GitApiClientServiceProvider',
-        'NpmWeb\MiddlewareClient\Laravel\MiddlewareClientServiceProvider',
         'NpmWeb\PackageUsage\Services\PackageUsageServiceProvider',
-        'NpmWeb\Reference\Laravel\ReferenceServiceProvider',
 
     ),
 
