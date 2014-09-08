@@ -3,7 +3,7 @@
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
-use NpmWeb\PackageUsage\Services\PackageUsageService;
+use NpmWeb\PackageUsage\Services\PackageUsageServiceInterface;
 
 class UsageShowCommand extends Command {
 
@@ -26,7 +26,7 @@ class UsageShowCommand extends Command {
      *
      * @return void
      */
-    public function __construct( PackageUsageService $service )
+    public function __construct( PackageUsageServiceInterface $service )
     {
         parent::__construct();
 
