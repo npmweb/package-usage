@@ -78,7 +78,8 @@ class PackageUsageService implements PackageUsageServiceInterface {
      * Retrieves the usage results.
      */
     public function getUsage() {
-
+        $dir = storage_path().'/usage/';
+        return json_decode(file_get_contents($dir.'usage.json'));
     }
 
 }
