@@ -1,11 +1,11 @@
 <?php
 
-namespace NpmWeb\MyAppName\Controllers\Backend;
+namespace NpmWeb\PackageUsage\Controllers\Backend;
 
 use Input;
 use Redirect;
 use View;
-use NpmWeb\MyAppName\Models\Registration;
+use NpmWeb\PackageUsage\Models\Registration;
 use NpmWeb\LaravelBase\Controllers\BaseController;
 
 class RegistrationsController extends BaseController {
@@ -62,9 +62,9 @@ class RegistrationsController extends BaseController {
 	            ->withInput()
 	            ->withErrors($this->reg->errors());
 	    }
-	 
+
 	    // $this->reg->create($input);
-	 
+
 	    return Redirect::route($this->modelName.'.index')
 	        ->with('myflash', 'Your record has been created.');
 	}
@@ -110,7 +110,7 @@ class RegistrationsController extends BaseController {
 	            ->withInput()
 	            ->withErrors($this->model->errors());
 	    }
-	 
+
 	    return Redirect::route($this->modelName.'.show', $id)
 	        ->with('myflash', 'Your record has been updated.');
 	}

@@ -1,6 +1,6 @@
 <?php
 
-use NpmWeb\MyAppName\Models\Organization;
+use NpmWeb\PackageUsage\Models\Organization;
 
 class OrganizationTableSeeder extends Seeder {
 

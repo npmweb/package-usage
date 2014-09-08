@@ -1,12 +1,12 @@
 <?php
 
-namespace NpmWeb\MyAppName\Views;
+namespace NpmWeb\PackageUsage\Views;
 
 use Mockery;
 use Symfony\Component\DomCrawler\Crawler;
 use View;
 use NpmWeb\LaravelTest\BackendTestCase;
-use NpmWeb\MyAppName\Models\Organization;
+use NpmWeb\PackageUsage\Models\Organization;
 
 /**
  * View test goals: for each view file, test each different situation of
@@ -14,7 +14,7 @@ use NpmWeb\MyAppName\Models\Organization;
  * outputted into the HTML?
  */
 class RegistrationViewTest extends BackendTestCase {
-	
+
 	public function setUp()
 	{
 		parent::setUp();
@@ -31,7 +31,7 @@ class RegistrationViewTest extends BackendTestCase {
 		// arrange
 		// act
 	    $crawler = $this->crawl(View::make('organizations.index'));
-	   	
+
 	   	// assert
 	   	$this->assertCount( 1, $crawler->filter('div#orgs'));
 	}
@@ -45,7 +45,7 @@ class RegistrationViewTest extends BackendTestCase {
 		// act
 	    $crawler = $this->crawl(View::make('organizations.show')
 	   							->with('model', $model));
-	   	
+
 	   	// assert
 	   	$this->assertCount( 1, $crawler->filter('label[for=name] div:contains("'.$model->name.'")'));
 	}
@@ -58,7 +58,7 @@ class RegistrationViewTest extends BackendTestCase {
 		// act
 	    $crawler = $this->crawl(View::make('organizations.edit')
 	   							->with('model', $model));
-	   	
+
 	   	// assert
 	   	$this->assertCount( 1, $crawler->filterXPath('//input[@name="name"][not(@value)]'));
 	}
@@ -72,7 +72,7 @@ class RegistrationViewTest extends BackendTestCase {
 		// act
 	    $crawler = $this->crawl(View::make('organizations.edit')
 	   							->with('model', $model));
-	   	
+
 	   	// assert
 	   	$this->assertCount( 1, $crawler->filterXPath('//input[@name="name"][@value="'.$model->name.'"]'));
 	}

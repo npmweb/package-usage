@@ -1,6 +1,6 @@
 <?php
 
-namespace NpmWeb\MyAppName\Controllers\Backend;
+namespace NpmWeb\PackageUsage\Controllers\Backend;
 
 use App;
 use Config;

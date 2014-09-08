@@ -74,7 +74,7 @@
       "app/database/seeds"
     ],
     "psr-4": {
-      "NpmWeb\\MyAppName\\": "app/src/NpmWeb/MyAppName",
+      "NpmWeb\\PackageUsage\\": "app/src/NpmWeb/PackageUsage",
       "NpmWeb\\Tests\\": "app/tests/NpmWeb/Tests"
     }
   },

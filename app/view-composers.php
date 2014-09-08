@@ -1,3 +1,3 @@
 <?php
 
-View::composer('*', 'NpmWeb\MyAppName\GlobalViewComposer');
+View::composer('*', 'NpmWeb\PackageUsage\GlobalViewComposer');

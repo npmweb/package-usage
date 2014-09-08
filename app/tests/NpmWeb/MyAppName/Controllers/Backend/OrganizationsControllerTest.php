@@ -1,6 +1,6 @@
 <?php
 
-namespace NpmWeb\MyAppName\Controllers\Backend;
+namespace NpmWeb\PackageUsage\Controllers\Backend;
 
 use Auth;
 use Mockery;
@@ -14,7 +14,7 @@ use NpmWeb\LaravelTest\BackendTestCase;
  * view called, and the right data passed to it?
  */
 class OrganizationsControllerTest extends BackendTestCase {
-	
+
 	public function setUp()
 	{
 		parent::setUp();
@@ -27,11 +27,11 @@ class OrganizationsControllerTest extends BackendTestCase {
 		// We want to use the real controller but mock out the model,
 		// so we create a full mock model and pass it into the IoC
 		// container.
-		$this->model = Mockery::mock('NpmWeb\MyAppName\Models\Organization');
-		$this->app->instance('NpmWeb\MyAppName\Models\Organization',$this->model);
+		$this->model = Mockery::mock('NpmWeb\PackageUsage\Models\Organization');
+		$this->app->instance('NpmWeb\PackageUsage\Models\Organization',$this->model);
 
-		$this->config = Mockery::mock('NpmWeb\MyAppName\Models\Config');
-		$this->app->instance('NpmWeb\MyAppName\Models\Config',$this->config);
+		$this->config = Mockery::mock('NpmWeb\PackageUsage\Models\Config');
+		$this->app->instance('NpmWeb\PackageUsage\Models\Config',$this->config);
 		$this->config
 			->shouldReceive('singleton')
 			->andReturn($this->config);
@@ -48,17 +48,17 @@ class OrganizationsControllerTest extends BackendTestCase {
 	public function testIndexHtmlSuccess() {
 		// arrange
 		Auth::shouldReceive('user')
-			->andReturn(Mockery::mock('NpmWeb\MyAppName\Models\User', function($mock) {
+			->andReturn(Mockery::mock('NpmWeb\PackageUsage\Models\User', function($mock) {
 				$mock->shouldReceive('getAttribute')
 					->with('user_type')
-					->andReturn(Mockery::mock('NpmWeb\MyAppName\Models\UserType', function($tMock) {
+					->andReturn(Mockery::mock('NpmWeb\PackageUsage\Models\UserType', function($tMock) {
 						$tMock->shouldReceive('getAttribute')
 							->with('super')
 							->andReturn(true);
 						}));
 			}));
 
-		// act 
+		// act
 		$this->call('GET', 'organizations');
 
 		// assert: has data
@@ -68,10 +68,10 @@ class OrganizationsControllerTest extends BackendTestCase {
 	public function testIndexJsonSuccessAll() {
 		// arrange
 		Auth::shouldReceive('user')
-			->andReturn(Mockery::mock('NpmWeb\MyAppName\Models\User', function($mock) {
+			->andReturn(Mockery::mock('NpmWeb\PackageUsage\Models\User', function($mock) {
 				$mock->shouldReceive('getAttribute')
 					->with('user_type')
-					->andReturn(Mockery::mock('NpmWeb\MyAppName\Models\UserType', function($tMock) {
+					->andReturn(Mockery::mock('NpmWeb\PackageUsage\Models\UserType', function($tMock) {
 						$tMock->shouldReceive('getAttribute')
 							->with('super')
 							->andReturn(true);
@@ -101,10 +101,10 @@ class OrganizationsControllerTest extends BackendTestCase {
 
 		// arrange
 		Auth::shouldReceive('user')
-			->andReturn(Mockery::mock('NpmWeb\MyAppName\Models\User', function($mock) {
+			->andReturn(Mockery::mock('NpmWeb\PackageUsage\Models\User', function($mock) {
 				$mock->shouldReceive('getAttribute')
 					->with('user_type')
-					->andReturn(Mockery::mock('NpmWeb\MyAppName\Models\UserType', function($tMock) {
+					->andReturn(Mockery::mock('NpmWeb\PackageUsage\Models\UserType', function($tMock) {
 						$tMock->shouldReceive('getAttribute')
 							->with('super')
 							->andReturn(true);
@@ -139,7 +139,7 @@ class OrganizationsControllerTest extends BackendTestCase {
 			->andReturn(false);
 		$this->model
 			->shouldReceive('errors')
-			->andReturn(Mockery::mock('NpmWeb\MyAppName\Models\UserType', function($tMock) {
+			->andReturn(Mockery::mock('NpmWeb\PackageUsage\Models\UserType', function($tMock) {
 				$tMock->shouldReceive('any')
 					->andReturn(true);
 				$tMock->shouldReceive('all')
@@ -165,7 +165,7 @@ class OrganizationsControllerTest extends BackendTestCase {
 			->andReturn(true);
 		$this->model
 			->shouldReceive('errors')
-			->andReturn(Mockery::mock('NpmWeb\MyAppName\Models\UserType', function($tMock) {
+			->andReturn(Mockery::mock('NpmWeb\PackageUsage\Models\UserType', function($tMock) {
 				$tMock->shouldReceive('any')
 					->andReturn(false);
 			}));
@@ -197,10 +197,10 @@ class OrganizationsControllerTest extends BackendTestCase {
 	public function testShowSuccess() {
 		// arrange
 		Auth::shouldReceive('user')
-			->andReturn(Mockery::mock('NpmWeb\MyAppName\Models\User', function($mock) {
+			->andReturn(Mockery::mock('NpmWeb\PackageUsage\Models\User', function($mock) {
 				$mock->shouldReceive('getAttribute')
 					->with('user_type')
-					->andReturn(Mockery::mock('NpmWeb\MyAppName\Models\UserType', function($tMock) {
+					->andReturn(Mockery::mock('NpmWeb\PackageUsage\Models\UserType', function($tMock) {
 						$tMock->shouldReceive('getAttribute')
 							->with('super')
 							->andReturn(true);
@@ -251,10 +251,10 @@ class OrganizationsControllerTest extends BackendTestCase {
 	public function testEditSuccess() {
 		// arrange
 		Auth::shouldReceive('user')
-			->andReturn(Mockery::mock('NpmWeb\MyAppName\Models\User', function($mock) {
+			->andReturn(Mockery::mock('NpmWeb\PackageUsage\Models\User', function($mock) {
 				$mock->shouldReceive('getAttribute')
 					->with('user_type')
-					->andReturn(Mockery::mock('NpmWeb\MyAppName\Models\UserType', function($tMock) {
+					->andReturn(Mockery::mock('NpmWeb\PackageUsage\Models\UserType', function($tMock) {
 						$tMock->shouldReceive('getAttribute')
 							->with('super')
 							->andReturn(true);
@@ -314,7 +314,7 @@ class OrganizationsControllerTest extends BackendTestCase {
 			->andReturn(false);
 		$this->model
 			->shouldReceive('errors')
-			->andReturn(Mockery::mock('NpmWeb\MyAppName\Models\UserType', function($tMock) {
+			->andReturn(Mockery::mock('NpmWeb\PackageUsage\Models\UserType', function($tMock) {
 				$tMock->shouldReceive('any')
 					->andReturn(true);
 				$tMock->shouldReceive('all')
@@ -345,7 +345,7 @@ class OrganizationsControllerTest extends BackendTestCase {
 			->andReturn(true);
 		$this->model
 			->shouldReceive('errors')
-			->andReturn(Mockery::mock('NpmWeb\MyAppName\Models\UserType', function($tMock) {
+			->andReturn(Mockery::mock('NpmWeb\PackageUsage\Models\UserType', function($tMock) {
 				$tMock->shouldReceive('any')
 					->andReturn(false);
 			}));

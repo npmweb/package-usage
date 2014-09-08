@@ -14,13 +14,13 @@
 global $namespace;
 
 if( preg_match( '/^frontend/', App::environment() ) ) {
-	$namespace = 'NpmWeb\MyAppName\Controllers\Frontend\\';
+	$namespace = 'NpmWeb\PackageUsage\Controllers\Frontend\\';
 	Route::get('/', $namespace.'OrganizationsController@index');
 	Route::get('monitor', $namespace.'MonitorController@index');
 }
 
 if( preg_match( '/^backend/', App::environment() ) ) {
-	$namespace = 'NpmWeb\MyAppName\Controllers\Backend\\';
+	$namespace = 'NpmWeb\PackageUsage\Controllers\Backend\\';
 
 	Route::get('monitor', $namespace.'MonitorController@index');
 

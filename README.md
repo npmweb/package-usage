@@ -17,8 +17,8 @@ Then:
 1. Create an app database starting with "l_". For example, "l_myappname". Create a user who can access the database. For local, it's good to name the user and password the same name as the database. If you like, you can use `/app/database/scripts/create-database.sql` as a starting point.
 2. Duplicate `.env.example.json` as `.env.json` and enter the DB connection info and any other connection info.
 3. Change the name of the app in the following places:
-    - `app/src/NpmWeb/MyAppName` -- rename it to your app's name
-    - Do a search-and-replace at the root of your project to replace "MyAppName" with your app's name that you chose above.
+    - `app/src/NpmWeb/PackageUsage` -- rename it to your app's name
+    - Do a search-and-replace at the root of your project to replace "PackageUsage" with your app's name that you chose above.
     - `app/views/[backend and frontend]/layouts/[_header and _headtag].blade`.php -- it should have already replaced MyApp Name with your app's name, but look and see if you want to add spaces, etc.
 4. Run `sudo npm install` to install the grunt packages for this project.
 5. Run `grunt`. This:

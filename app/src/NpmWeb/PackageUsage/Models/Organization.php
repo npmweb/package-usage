@@ -1,6 +1,6 @@
 <?php
 
-namespace NpmWeb\MyAppName\Models;
+namespace NpmWeb\PackageUsage\Models;
 
 class Organization extends \NpmWeb\LaravelBase\Models\BaseUidModel {
 
@@ -25,5 +25,5 @@ class Organization extends \NpmWeb\LaravelBase\Models\BaseUidModel {
 	public function __toString() {
 		return $this->name;
 	}
-	
+
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace NpmWeb\MyAppName\Controllers\Frontend;
+namespace NpmWeb\PackageUsage\Controllers\Frontend;
 
 use Auth;
 use Input;
@@ -9,7 +9,7 @@ use Request;
 use Response;
 use View;
 use NpmWeb\LaravelBase\Controllers\BaseController;
-use NpmWeb\MyAppName\Models\Organization;
+use NpmWeb\PackageUsage\Models\Organization;
 
 class OrganizationsController extends BaseController {
 

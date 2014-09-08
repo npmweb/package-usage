@@ -1,6 +1,6 @@
 <?php
 
-namespace NpmWeb\MyAppName\Controllers\Frontend;
+namespace NpmWeb\PackageUsage\Controllers\Frontend;
 
 use View;
 use NpmWeb\LaravelBase\Controllers\BaseController;

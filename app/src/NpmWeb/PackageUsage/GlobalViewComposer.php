@@ -1,6 +1,6 @@
 <?php
 
-namespace NpmWeb\MyAppName;
+namespace NpmWeb\PackageUsage;
 
 use Route;
 use NpmWeb\LaravelBase\BaseViewComposer;

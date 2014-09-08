@@ -1,6 +1,6 @@
 <?php
 
-namespace NpmWeb\MyAppName\Controllers\Backend;
+namespace NpmWeb\PackageUsage\Controllers\Backend;
 
 use Auth;
 use Input;
@@ -9,7 +9,7 @@ use Request;
 use Response;
 use View;
 use NpmWeb\LaravelBase\Controllers\BaseController;
-use NpmWeb\MyAppName\Models\Organization;
+use NpmWeb\PackageUsage\Models\Organization;
 
 class OrganizationsController extends BaseController {
 
@@ -72,7 +72,7 @@ class OrganizationsController extends BaseController {
 	            ->withInput()
 	            ->withErrors($obj->errors()->all());
 	    }
-	 
+
 	    return Redirect::route($this->modelName.'.index')
 	        ->with('myflash', 'Your record has been created.');
 	}
@@ -119,7 +119,7 @@ class OrganizationsController extends BaseController {
 	            ->withInput()
 	            ->withErrors($obj->errors()->all());
 	    }
-	 
+
 	    return Redirect::route($this->modelName.'.show', $id)
 	        ->with('myflash', 'Your record has been updated.');
 	}

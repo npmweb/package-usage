@@ -1,6 +1,6 @@
 <?php
 
-namespace NpmWeb\MyAppName\Models;
+namespace NpmWeb\PackageUsage\Models;
 
 use NpmWeb\LaravelTest\BackendTestCase;
 
