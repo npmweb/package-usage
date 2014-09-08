@@ -11,8 +11,6 @@
   "repositories": [
     { "type": "vcs", "url": "git@bitbucket.org:npmweb/admin-theme" },
     { "type": "vcs", "url": "git@bitbucket.org:npmweb/chms-models" },
-    { "type": "vcs", "url": "git@bitbucket.org:npmweb/escaping" },
-    { "type": "vcs", "url": "git@bitbucket.org:npmweb/escaping-js" },
     { "type": "vcs", "url": "git@bitbucket.org:npmweb/laravel-auth" },
     { "type": "vcs", "url": "git@bitbucket.org:npmweb/laravel-base" },
     { "type": "vcs", "url": "git@bitbucket.org:npmweb/middleware-client" },

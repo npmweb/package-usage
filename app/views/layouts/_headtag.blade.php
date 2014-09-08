@@ -8,8 +8,8 @@
 
 <script src="{{ asset('includes/shared/components/require.js') }}"></script>
 <script>
-	require.config({
-		urlArgs: "bust="+(new Date()).getTime(),
-		baseUrl: {{ esc_js(asset('includes/shared/components')) }}
-	});
+    require.config({
+        urlArgs: "bust="+(new Date()).getTime(),
+        baseUrl: '{{ asset('includes/shared/components') }}'
+    });
 </script>
