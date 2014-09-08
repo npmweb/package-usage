@@ -113,6 +113,7 @@ return array(
         'NpmWeb\FormBuilder\HtmlServiceProvider',
         'NpmWeb\GitApiClient\Laravel\GitApiClientServiceProvider',
         'NpmWeb\MiddlewareClient\Laravel\MiddlewareClientServiceProvider',
+        'NpmWeb\PackageUsage\Services\PackageUsageServiceProvider',
         'NpmWeb\Reference\Laravel\ReferenceServiceProvider',
 
     ),
