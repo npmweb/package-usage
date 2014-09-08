@@ -66,7 +66,13 @@ class PackageUsageService implements PackageUsageServiceInterface {
             }
         }
 
-        // output
+        // sort results
+        ksort( $packageUsage, SORT_STRING | SORT_FLAG_CASE );
+        foreach( $packageUsage as &$package ) {
+            sort($package['usages'], SORT_STRING | SORT_FLAG_CASE); // alphabetical
+        }
+
+        // save to disk
         $dir = storage_path().'/usage/';
         if( !file_exists($dir) ) { mkdir($dir); }
         $fh = fopen( $dir.'usage.json', 'w' );
