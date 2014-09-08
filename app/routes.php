@@ -13,25 +13,6 @@
 
 global $namespace;
 
-if( preg_match( '/^frontend/', App::environment() ) ) {
-	$namespace = 'NpmWeb\PackageUsage\Controllers\Frontend\\';
-	Route::get('/', $namespace.'OrganizationsController@index');
-	Route::get('monitor', $namespace.'MonitorController@index');
-}
-
-if( preg_match( '/^backend/', App::environment() ) ) {
-	$namespace = 'NpmWeb\PackageUsage\Controllers\Backend\\';
-
-	Route::get('monitor', $namespace.'MonitorController@index');
-
-	Route::get('login', $namespace.'LoginsController@create');
-	Route::resource('logins', $namespace.'LoginsController', ['only'=>['create','store','destroy']]);
-
-	Route::group(['before'=>['auth','csrf_resource']], function() {
-		global $namespace;
-
-		Route::get('/', $namespace.'OrganizationsController@index');
-		Route::resource('organizations', $namespace.'OrganizationsController');
-
-	});
-}
+$namespace = 'NpmWeb\PackageUsage\Controllers\\';
+Route::get('/', $namespace.'PackagesController@index');
+Route::get('monitor', $namespace.'MonitorController@index');

@@ -6,7 +6,7 @@ AddDefaultCharset UTF-8
     </IfModule>
 
     RewriteEngine On
-    RewriteBase /laravel-template
+    RewriteBase /package-usage
 
     # Redirect Trailing Slashes...
 	RewriteRule ^(.*)/$ /$1 [L,R=301]
