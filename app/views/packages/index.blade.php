@@ -14,7 +14,7 @@
                         <div class="usages" style="display:none">
                             <ul>
                                 @foreach( $package->usages as $usage => $version )
-                                    <li>{{{ $usage }}}: {{{ $version }}}</li>
+                                    <li><a href="https://bitbucket.org/npmweb/{{{ $usage }}}" target="_blank">{{{ $usage }}}</a>: {{{ $version }}}</li>
                                 @endforeach
                             </ul>
                         </div>
