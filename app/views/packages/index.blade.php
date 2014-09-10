@@ -8,7 +8,7 @@
                     <div class="package">
                         <div>
                             <button class="usages button small right">&#9733; {{{ count((array)$package->usages) }}}</button>
-                            <h3><a href="{{{ $package->homepage }}}">{{{ $package->name }}}</a></h3>
+                            <h3><a href="{{{ $package->homepage }}}" target="_blank">{{{ $package->name }}}</a></h3>
                             <p>{{{ $package->description }}}</p>
                         </div>
                         <div class="usages" style="display:none">
