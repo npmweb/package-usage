@@ -2,6 +2,8 @@
 
 namespace NpmWeb\PackageUsage\Controllers;
 
+use Request;
+use Response;
 use View;
 use NpmWeb\PackageUsage\Services\PackageUsageServiceInterface;
 use Packagist\Api\Client;
@@ -25,9 +27,16 @@ class PackagesController extends \Controller {
      */
     public function index()
     {
-        return View::make($this->modelName.'.index', [
-            'packageUsage' => $this->packages->getUsage(),
-        ]);
+        if( Request::wantsJson() ) {
+            $packages = array_values((array)$this->packages->getUsage());
+            return Response::json([
+                'status' => 'success',
+                'models' => $packages,
+            ]);
+        } else {
+            return View::make($this->modelName.'.index', [
+            ]);
+        }
     }
 
     public function test()

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7553184992e4f04e692340075ac07453",
+    "hash": "650e24c099adf7566e61f22fca604300",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -67,6 +67,63 @@
             "time": "2014-09-07 10:18:59"
         },
         {
+            "name": "components/backbone",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/backbone.git",
+                "reference": "4d3d6ebfa14add6cd917cc380e889844be31f681"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/backbone/zipball/4d3d6ebfa14add6cd917cc380e889844be31f681",
+                "reference": "4d3d6ebfa14add6cd917cc380e889844be31f681",
+                "shasum": ""
+            },
+            "require": {
+                "components/underscore": ">=1.4.3"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "backbone.js"
+                    ],
+                    "files": [
+                        "backbone-min.js"
+                    ],
+                    "shim": {
+                        "deps": [
+                            "underscore"
+                        ],
+                        "exports": "Backbone"
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Ashkenas",
+                    "email": "jeremy@documentcloud.org"
+                }
+            ],
+            "description": "Give your JS App some Backbone with Models, Views, Collections, and Events.",
+            "homepage": "http://backbonejs.org",
+            "keywords": [
+                "browser",
+                "client",
+                "controller",
+                "model",
+                "router",
+                "server",
+                "view"
+            ],
+            "time": "2013-12-13 12:10:45"
+        },
+        {
             "name": "components/foundation",
             "version": "5.1.1",
             "source": {
@@ -127,7 +184,7 @@
         },
         {
             "name": "components/jquery",
-            "version": "dev-master",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/jquery.git",
@@ -273,6 +330,59 @@
             "description": "Normalize.css is a customisable CSS file that makes browsers render all elements more consistently and in line with modern standards.",
             "homepage": "http://necolas.github.com/normalize.css/",
             "time": "2014-04-24 15:15:29"
+        },
+        {
+            "name": "components/underscore",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/underscore.git",
+                "reference": "5319dd48d877d8c1ad217ec7851e840d0065c25f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/underscore/zipball/5319dd48d877d8c1ad217ec7851e840d0065c25f",
+                "reference": "5319dd48d877d8c1ad217ec7851e840d0065c25f",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "*"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "underscore.js"
+                    ],
+                    "files": [
+                        "underscore-min.js",
+                        "underscore-min.map"
+                    ],
+                    "shim": {
+                        "exports": "_"
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Ashkenas",
+                    "email": "jeremy@documentcloud.org"
+                }
+            ],
+            "description": "JavaScript's functional programming helper library.",
+            "homepage": "http://underscorejs.org",
+            "keywords": [
+                "browser",
+                "client",
+                "functional",
+                "server",
+                "util"
+            ],
+            "time": "2014-01-13 12:26:44"
         },
         {
             "name": "cpliakas/git-wrapper",
@@ -1563,13 +1673,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/php-helpers.git",
-                "reference": "9a4c49821b2b789a3ad2cd98fe6ef6ca29e1f539"
+                "reference": "43cb7d5cfce89850cf6a1bfe207c05fbf714037d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/php-helpers/zipball/9a4c49821b2b789a3ad2cd98fe6ef6ca29e1f539",
-                "reference": "9a4c49821b2b789a3ad2cd98fe6ef6ca29e1f539",
+                "url": "https://api.github.com/repos/npmweb/php-helpers/zipball/43cb7d5cfce89850cf6a1bfe207c05fbf714037d",
+                "reference": "43cb7d5cfce89850cf6a1bfe207c05fbf714037d",
                 "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=4.1"
             },
             "require-dev": {
                 "phpunit/phpunit": "4.2.*"
@@ -1588,7 +1701,7 @@
                 "source": "https://github.com/npmweb/php-helpers/tree/master",
                 "issues": "https://github.com/npmweb/php-helpers/issues"
             },
-            "time": "2014-09-10 10:31:22"
+            "time": "2014-09-10 10:37:01"
         },
         {
             "name": "patchwork/utf8",
