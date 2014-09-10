@@ -30,8 +30,8 @@
 
 require(['jquery'], function($) {
     $(function(){
-        $('button.usages').click(function(evt){
-            $(this).closest('.package').find('div.usages').toggle();
+        $('div.package').click(function(evt){
+            $(this).find('div.usages').toggle();
         });
     });
 });
