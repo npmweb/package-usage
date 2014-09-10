@@ -6,7 +6,7 @@
             <h2>Packages</h2>
                 @foreach( $packageUsage as $package )
                     <div class="package">
-                        <div>
+                        <div class="summary">
                             <button class="usages button small right">&#9733; {{{ count((array)$package->usages) }}}</button>
                             <h3><a href="{{{ $package->homepage }}}" target="_blank">{{{ $package->name }}}</a></h3>
                             <p>{{{ $package->description }}}</p>
@@ -30,8 +30,11 @@
 
 require(['jquery'], function($) {
     $(function(){
-        $('div.package').click(function(evt){
-            $(this).find('div.usages').toggle();
+        $('div.summary a').click(function(evt) {
+            evt.stopPropagation(); // so won't trigger div.summary click
+        });
+        $('div.summary').click(function(evt){
+            $(this).closest('div.package').find('div.usages').toggle();
         });
     });
 });
