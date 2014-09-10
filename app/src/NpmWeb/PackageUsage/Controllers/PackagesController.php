@@ -4,15 +4,18 @@ namespace NpmWeb\PackageUsage\Controllers;
 
 use View;
 use NpmWeb\PackageUsage\Services\PackageUsageServiceInterface;
+use Packagist\Api\Client;
 
 class PackagesController extends \Controller {
 
     protected $packages;
     protected $modelName = 'packages';
 
-    public function __construct( PackageUsageServiceInterface $packages )
+    public function __construct( PackageUsageServiceInterface $packages,
+        Client $packagist )
     {
         $this->packages = $packages;
+        $this->packagist = $packagist;
     }
 
     /**
@@ -25,6 +28,11 @@ class PackagesController extends \Controller {
         return View::make($this->modelName.'.index', [
             'packageUsage' => $this->packages->getUsage(),
         ]);
+    }
+
+    public function test()
+    {
+        d($this->packagist->get('ezyang/htmlpurifier'));
     }
 
 }

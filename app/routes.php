@@ -15,4 +15,5 @@ global $namespace;
 
 $namespace = 'NpmWeb\PackageUsage\Controllers\\';
 Route::get('/', $namespace.'PackagesController@index');
+Route::get('/test', $namespace.'PackagesController@test');
 Route::get('monitor', $namespace.'MonitorController@index');
