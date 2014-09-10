@@ -7,7 +7,7 @@
             <ul>
                 @foreach( $packageUsage as $package )
                     <li>
-                        <h3>{{{ $package->name }}}<h3>
+                        <h3><a href="{{{ $package->homepage }}}">{{{ $package->name }}}</a><h3>
                         <p>{{{ $package->description }}}</p>
                         <p>Used in {{{ count($package->usages) }}} apps:</p>
                         <ul>

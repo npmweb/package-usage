@@ -59,6 +59,7 @@ class PackageUsageService implements PackageUsageServiceInterface {
                     $packageUsage[$packageName] = [
                         'name' => $packageName,
                         'description' => $composer2Config->description,
+                        'homepage' => $composer2Config->homepage,
                         'usages' => [],
                     ];
                 }

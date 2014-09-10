@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ffaee121a1b75a34bece0ff630375c50",
+    "hash": "7553184992e4f04e692340075ac07453",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -897,12 +897,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "7c9639d93558c96ade44f60a4d201b29d68c4d7b"
+                "reference": "d3dd8d4c5ec855aa47939e3bac1d3b92b6d50df2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/7c9639d93558c96ade44f60a4d201b29d68c4d7b",
-                "reference": "7c9639d93558c96ade44f60a4d201b29d68c4d7b",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/d3dd8d4c5ec855aa47939e3bac1d3b92b6d50df2",
+                "reference": "d3dd8d4c5ec855aa47939e3bac1d3b92b6d50df2",
                 "shasum": ""
             },
             "require": {
@@ -963,7 +963,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-08-27 14:48:43"
+            "time": "2014-09-09 14:04:58"
         },
         {
             "name": "kriswallsmith/buzz",
@@ -1019,12 +1019,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "def2787c9cc6a5821b16ecaec902c775da1cd569"
+                "reference": "095b950cd6d2780bef8f5479f832f0661356d979"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/def2787c9cc6a5821b16ecaec902c775da1cd569",
-                "reference": "def2787c9cc6a5821b16ecaec902c775da1cd569",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/095b950cd6d2780bef8f5479f832f0661356d979",
+                "reference": "095b950cd6d2780bef8f5479f832f0661356d979",
                 "shasum": ""
             },
             "require": {
@@ -1126,7 +1126,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-09-08 03:15:03"
+            "time": "2014-09-09 14:56:30"
         },
         {
             "name": "laravel/laravel",
@@ -1241,16 +1241,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.11.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "2b60366be6dcb9f9cd3e244ab25eb98eaea99551"
+                "reference": "cde7a00d1410a17fb6d61b993cb017a78be1137c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/2b60366be6dcb9f9cd3e244ab25eb98eaea99551",
-                "reference": "2b60366be6dcb9f9cd3e244ab25eb98eaea99551",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/cde7a00d1410a17fb6d61b993cb017a78be1137c",
+                "reference": "cde7a00d1410a17fb6d61b993cb017a78be1137c",
                 "shasum": ""
             },
             "require": {
@@ -1283,7 +1283,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2014-08-26 03:18:44"
+            "time": "2014-09-10 03:26:33"
         },
         {
             "name": "nikic/php-parser",
@@ -1381,12 +1381,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/composer-service.git",
-                "reference": "ead771374c05aa1fcde32036841c43c49c9e9f16"
+                "reference": "7b47da647ea0ee665b5f36192d2dcb4aed0e9765"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/composer-service/zipball/ead771374c05aa1fcde32036841c43c49c9e9f16",
-                "reference": "ead771374c05aa1fcde32036841c43c49c9e9f16",
+                "url": "https://api.github.com/repos/npmweb/composer-service/zipball/7b47da647ea0ee665b5f36192d2dcb4aed0e9765",
+                "reference": "7b47da647ea0ee665b5f36192d2dcb4aed0e9765",
                 "shasum": ""
             },
             "require": {
@@ -1413,7 +1413,7 @@
                 "source": "https://github.com/npmweb/composer-service/tree/master",
                 "issues": "https://github.com/npmweb/composer-service/issues"
             },
-            "time": "2014-08-27 12:19:58"
+            "time": "2014-09-10 10:20:38"
         },
         {
             "name": "npmweb/environment-banner",
@@ -1652,12 +1652,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "f2cab55fd542cf481ef2514c83ef864138edcbd3"
+                "reference": "3f3b9b90fbfc691aa91122c4073f169f1ae7f19f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/f2cab55fd542cf481ef2514c83ef864138edcbd3",
-                "reference": "f2cab55fd542cf481ef2514c83ef864138edcbd3",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/3f3b9b90fbfc691aa91122c4073f169f1ae7f19f",
+                "reference": "3f3b9b90fbfc691aa91122c4073f169f1ae7f19f",
                 "shasum": ""
             },
             "require": {
@@ -1742,7 +1742,7 @@
                 "x.509",
                 "x509"
             ],
-            "time": "2014-09-07 10:43:22"
+            "time": "2014-09-09 14:41:58"
         },
         {
             "name": "predis/predis",
@@ -3109,12 +3109,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
-                "reference": "db77c80d33d72e33a62b80581e9d150af85de556"
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/db77c80d33d72e33a62b80581e9d150af85de556",
-                "reference": "db77c80d33d72e33a62b80581e9d150af85de556",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c",
                 "shasum": ""
             },
             "require": {
@@ -3137,19 +3137,16 @@
             ],
             "authors": [
                 {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
                     "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers.",
@@ -3158,7 +3155,7 @@
                 "lexer",
                 "parser"
             ],
-            "time": "2014-06-11 23:09:27"
+            "time": "2014-09-09 13:34:57"
         },
         {
             "name": "fzaninotto/faker",
@@ -3808,12 +3805,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "8ab105f1fbf947408f69f476aba8ce8180503968"
+                "reference": "c7d59948d6e82818e1bdff7cadb6c34710eb7dc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/8ab105f1fbf947408f69f476aba8ce8180503968",
-                "reference": "8ab105f1fbf947408f69f476aba8ce8180503968",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/c7d59948d6e82818e1bdff7cadb6c34710eb7dc0",
+                "reference": "c7d59948d6e82818e1bdff7cadb6c34710eb7dc0",
                 "shasum": ""
             },
             "require": {
@@ -3865,7 +3862,7 @@
                 "export",
                 "exporter"
             ],
-            "time": "2014-08-13 23:54:49"
+            "time": "2014-09-10 00:51:36"
         },
         {
             "name": "sebastian/version",

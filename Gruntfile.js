@@ -136,6 +136,12 @@ module.exports = function(grunt) {
           title: 'Sass',
           message: 'CSS updated.'
         }
+      },
+      composer: {
+        options: {
+          title: 'Composer',
+          message: 'Update finished.'
+        }
       }
     }
   });
@@ -164,5 +170,8 @@ module.exports = function(grunt) {
   });
   grunt.registerTask('dbseed', function(env) {
     grunt.task.run('shell:dbseed:'+env);
+  });
+  grunt.registerTask('composer-update', function(env) {
+    grunt.task.run(['composer:update','notify:composer']);
   });
 }
