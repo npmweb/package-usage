@@ -12,7 +12,6 @@ module.exports = function(grunt) {
     paths: {
       shared: 'endpoints/shared',
       frontend: 'endpoints/frontend',
-      backend: 'endpoints/backend',
       sass: 'includes/scss',
       css: 'includes/css',
       src: 'app/src',
@@ -25,10 +24,9 @@ module.exports = function(grunt) {
     clean: {
       symlink: [
         '<%= paths.frontend %>/includes/shared',
-        '<%= paths.backend %>/includes/shared',
       ],
       sass: [
-        '<%= paths.backend %>/<%= paths.css %>/main.css'
+        '<%= paths.frontend %>/<%= paths.css %>/main.css'
       ]
     },
     symlink: {
@@ -37,10 +35,6 @@ module.exports = function(grunt) {
             {
               src: '<%= paths.shared %>',
               dest: '<%= paths.frontend %>/includes/shared'
-            },
-            {
-              src: '<%= paths.shared %>',
-              dest: '<%= paths.backend %>/includes/shared'
             }
         ]
       }
@@ -57,7 +51,6 @@ module.exports = function(grunt) {
             'app/storage/meta/',
             'app/storage/sessions/',
             'app/storage/views/',
-            'vendor/ezyang/htmlpurifier/library/HTMLPurifier/DefinitionCache/Serializer'
           ]
         }
     },
@@ -86,15 +79,6 @@ module.exports = function(grunt) {
       }
     },
     sass: {
-      backend: {
-        options: {
-          style: 'compressed'
-        },
-        files: {
-          '<%= paths.backend %>/<%= paths.css %>/main.css':
-            '<%= paths.backend %>/<%= paths.sass %>/main.scss'
-        }
-      },
       frontend: {
         options: {
           style: 'compressed'
@@ -118,7 +102,6 @@ module.exports = function(grunt) {
       },
       sass: {
         files: [
-          '<%= paths.backend %>/<%= paths.sass %>/**/*.scss',
           '<%= paths.frontend %>/<%= paths.sass %>/**/*.scss'
         ],
         tasks: ['sass','notify:sass']
