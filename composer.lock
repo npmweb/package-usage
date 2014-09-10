@@ -1563,12 +1563,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/php-helpers.git",
-                "reference": "991b1f10474df6d252134c406720be247d74bbd3"
+                "reference": "9a4c49821b2b789a3ad2cd98fe6ef6ca29e1f539"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/php-helpers/zipball/991b1f10474df6d252134c406720be247d74bbd3",
-                "reference": "991b1f10474df6d252134c406720be247d74bbd3",
+                "url": "https://api.github.com/repos/npmweb/php-helpers/zipball/9a4c49821b2b789a3ad2cd98fe6ef6ca29e1f539",
+                "reference": "9a4c49821b2b789a3ad2cd98fe6ef6ca29e1f539",
                 "shasum": ""
             },
             "require-dev": {
@@ -1585,10 +1585,10 @@
             },
             "description": "Helper functions for working with PHP primitives",
             "support": {
-                "source": "https://github.com/npmweb/php-helpers/tree/1.0.1",
+                "source": "https://github.com/npmweb/php-helpers/tree/master",
                 "issues": "https://github.com/npmweb/php-helpers/issues"
             },
-            "time": "2014-08-22 16:30:04"
+            "time": "2014-09-10 10:31:22"
         },
         {
             "name": "patchwork/utf8",

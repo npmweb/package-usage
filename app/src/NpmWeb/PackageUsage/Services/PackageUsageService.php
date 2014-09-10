@@ -63,14 +63,14 @@ class PackageUsageService implements PackageUsageServiceInterface {
                         'usages' => [],
                     ];
                 }
-                $packageUsage[$packageName]['usages'][] = $repoName;
+                $packageUsage[$packageName]['usages'][$repoName] = $version;
             }
         }
 
         // sort results
         ksort( $packageUsage, SORT_STRING | SORT_FLAG_CASE );
         foreach( $packageUsage as &$package ) {
-            sort($package['usages'], SORT_STRING | SORT_FLAG_CASE); // alphabetical
+            ksort($package['usages'], SORT_STRING | SORT_FLAG_CASE); // alphabetical
         }
 
         // save to disk

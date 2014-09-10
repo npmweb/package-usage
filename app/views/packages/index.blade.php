@@ -9,10 +9,10 @@
                     <li>
                         <h3><a href="{{{ $package->homepage }}}">{{{ $package->name }}}</a><h3>
                         <p>{{{ $package->description }}}</p>
-                        <p>Used in {{{ count($package->usages) }}} apps:</p>
+                        <p>Used in {{{ pluralize($package->usages, 'app') }}}:</p>
                         <ul>
-                            @foreach( $package->usages as $usage )
-                                <li>{{{ $usage }}}</li>
+                            @foreach( $package->usages as $usage => $version )
+                                <li>{{{ $usage }}}: {{{ $version }}}</li>
                             @endforeach
                         </ul>
                     </li>
