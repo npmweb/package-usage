@@ -35,6 +35,7 @@ class PackagesController extends \Controller {
             ]);
         } else {
             return View::make($this->modelName.'.index', [
+                'username' => getenv('BITBUCKET_USER'),
             ]);
         }
     }
