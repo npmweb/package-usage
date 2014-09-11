@@ -4,6 +4,11 @@
     <div class="row">
         <div class="columns">
             <h2>Packages</h2>
+                <p>
+                    Composer packages used across all of NpmWeb's applications.
+                    <a href="https://github.com/npmweb/package-usage">View on GitHub.</a>
+                </p>
+
                 <div id="search"></div>
                 <script type="text/template" id="search-tmpl">
                     <input type="search" id="search" placeholder="Search" />
