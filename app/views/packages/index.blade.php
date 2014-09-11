@@ -63,7 +63,9 @@ require(['backbone','jquery','../js/utils'], function(Backbone,$) {
             var filteredPackages = _.filter( this.fullPackages, function(pkg) {
                 return _.some( terms, function(term) {
                     return (-1 != pkg.name.toLowerCase().indexOf(term))
-                        || (-1 != pkg.description.toLowerCase().indexOf(term));
+                        || (null == pkg.description
+                            ? false
+                            : (-1 != pkg.description.toLowerCase().indexOf(term)));
                 });
             });
 
