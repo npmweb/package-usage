@@ -13,7 +13,6 @@ Limitations
 
 This app is under development, and still has several limitations:
 
-- It's currently hard-coded to pull up npmweb's Bitbucket account.
 - It can only load webapps from a single Bitbucket repository, not other hosts or from multiple.
 - It can only load dependencies from Packagist or Git repos, not svn.
 - When loading dependencies from Git repos, it can only find them if the package name is in the repo URL; if they don't match, it won't be found.
@@ -30,7 +29,7 @@ Make sure the following are installed on your system:
 
 Then:
 
-1. Duplicate `.env.example.json` as `.env.json` and enter the Bitbucket connection info.
+1. Duplicate `.env.example.json` as `.env.json` and enter your Bitbucket username and OAuth connection info.
 2. Run `sudo npm install` to install the grunt packages for this project.
 3. Run `grunt`. This:
     - Installs PHP dependencies with `composer install`.

@@ -1,5 +1,6 @@
 <?php namespace NpmWeb\PackageUsage\Commands;
 
+use Config;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
@@ -43,7 +44,8 @@ class UsageUpdateCommand extends Command {
      */
     public function fire()
     {
-        $this->service->updateUsage();
+        $owner = getenv("BITBUCKET_USER");
+        $this->service->updateUsage($owner);
     }
 
     /**

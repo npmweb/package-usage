@@ -22,8 +22,7 @@ class PackageUsageService implements PackageUsageServiceInterface {
     /**
      * Recalculates all usages with the latest information in the repos.
      */
-    public function updateUsage() {
-        $owner = 'npmweb';
+    public function updateUsage( $owner ) {
         $packageUsage = [];
 
         $repoNames = $this->git->getReposOwnedBy($owner,'php');
