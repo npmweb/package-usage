@@ -19,6 +19,7 @@
                                 <p><%= pkg.description %></p>
                             </div>
                             <div class="usages" style="display:none">
+                                <p>Used in <%= pu.pluralize( pkg.usages, 'webapp' ) %>:</p>
                                 <ul>
                                     <% _.each( pkg.usages, function(version, usage) { %>
                                         <li><a href="https://bitbucket.org/npmweb/<%= usage %>" target="_blank"><%= usage %></a>: <%= version %></li>
@@ -38,7 +39,7 @@
 var pu = pu || {};
 pu.baseUrl = {{ json_encode(url()) }};
 
-require(['backbone','jquery'], function(Backbone,$) {
+require(['backbone','jquery','../js/utils'], function(Backbone,$) {
 
     pu.Package = Backbone.Model.extend({});
 
