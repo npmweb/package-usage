@@ -14,7 +14,7 @@
                     <% _.each( packages, function(pkg) { %>
                         <div class="package">
                             <div class="summary">
-                                <button class="usages button small right">&#9733; <%= pkg.usages.length %></button>
+                                <button class="usages button small right">&#9733; <%= Object.keys(pkg.usages).length %></button>
                                 <h3><a href="<%= pkg.homepage %>" target="_blank"><%= pkg.name %></a></h3>
                                 <p><%= pkg.description %></p>
                             </div>
