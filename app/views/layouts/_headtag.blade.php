@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('includes/css/main.css') }}" />
 @yield('css')
 
+<script src="{{ asset('includes/shared/components/environment-banner/environment-banner-built.js') }}"></script>
 <script src="{{ asset('includes/shared/components/require.js') }}"></script>
 <script>
     require.config({
