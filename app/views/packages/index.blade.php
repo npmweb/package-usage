@@ -4,12 +4,12 @@
     <div class="row">
         <div class="columns">
             <h2>Packages</h2>
-                <div id="packages"></div>
-
-                <script type="text/template" id="packages-tmpl-2">
-                    hi
+                <div id="search"></div>
+                <script type="text/template" id="search-tmpl">
+                    <input type="search" id="search" placeholder="Search" />
                 </script>
 
+                <div id="packages"></div>
                 <script type="text/template" id="packages-tmpl">
                     <% _.each( packages, function(pkg) { %>
                         <div class="package">
@@ -50,7 +50,39 @@ require(['backbone','jquery','../js/utils'], function(Backbone,$) {
             this.fetch({reset:true});
         },
         parse: function(response) {
-            return response.models;
+            this.fullPackages = response.models;
+            return this.fullPackages;
+        },
+        filter: function(query) {
+            var terms = query.toLowerCase().split(/\W+/);
+            var filteredPackages = _.filter( this.fullPackages, function(pkg) {
+                return _.some( terms, function(term) {
+                    return (-1 != pkg.name.toLowerCase().indexOf(term))
+                        || (-1 != pkg.description.toLowerCase().indexOf(term));
+                });
+            });
+
+            this.reset(filteredPackages);
+        }
+    });
+
+    pu.SearchView = Backbone.View.extend({
+        el: $('#search'),
+        template: $('#search-tmpl').html(),
+        initialize: function( packageCollection ) {
+            this.packageCollection = packageCollection;
+            this.render();
+        },
+        render: function() {
+            this.$el.html( _.template( this.template, {
+            }));
+        },
+        events: {
+            'keyup #search': 'search'
+        },
+        search: function(evt) {
+            var query = $(evt.target).val();
+            this.packageCollection.filter(query);
         }
     });
 
@@ -76,6 +108,7 @@ require(['backbone','jquery','../js/utils'], function(Backbone,$) {
     });
 
     pu.packageCollection = new pu.PackageCollection();
+    pu.searchView = new pu.SearchView( pu.packageCollection );
     pu.packageListView = new pu.PackageListView( pu.packageCollection );
 });
 
