@@ -1129,12 +1129,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "095b950cd6d2780bef8f5479f832f0661356d979"
+                "reference": "d57b430c2531ca8dc6b75e18ef94003436a731de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/095b950cd6d2780bef8f5479f832f0661356d979",
-                "reference": "095b950cd6d2780bef8f5479f832f0661356d979",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/d57b430c2531ca8dc6b75e18ef94003436a731de",
+                "reference": "d57b430c2531ca8dc6b75e18ef94003436a731de",
                 "shasum": ""
             },
             "require": {
@@ -1236,7 +1236,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-09-09 14:56:30"
+            "time": "2014-09-11 01:18:00"
         },
         {
             "name": "laravel/laravel",
@@ -1283,12 +1283,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "12545cda2f7a0bd82a110f742ef455fe735e60cf"
+                "reference": "b3f039339d7a8173c7b441dbaa572ccacb712b54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/12545cda2f7a0bd82a110f742ef455fe735e60cf",
-                "reference": "12545cda2f7a0bd82a110f742ef455fe735e60cf",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/b3f039339d7a8173c7b441dbaa572ccacb712b54",
+                "reference": "b3f039339d7a8173c7b441dbaa572ccacb712b54",
                 "shasum": ""
             },
             "require": {
@@ -1347,7 +1347,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-07-31 22:12:22"
+            "time": "2014-09-10 15:41:01"
         },
         {
             "name": "nesbot/carbon",
@@ -1491,12 +1491,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/composer-service.git",
-                "reference": "7b47da647ea0ee665b5f36192d2dcb4aed0e9765"
+                "reference": "edb446b16732eee55b225f1b9e9e036b59076ccd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/composer-service/zipball/7b47da647ea0ee665b5f36192d2dcb4aed0e9765",
-                "reference": "7b47da647ea0ee665b5f36192d2dcb4aed0e9765",
+                "url": "https://api.github.com/repos/npmweb/composer-service/zipball/edb446b16732eee55b225f1b9e9e036b59076ccd",
+                "reference": "edb446b16732eee55b225f1b9e9e036b59076ccd",
                 "shasum": ""
             },
             "require": {
@@ -1523,7 +1523,7 @@
                 "source": "https://github.com/npmweb/composer-service/tree/master",
                 "issues": "https://github.com/npmweb/composer-service/issues"
             },
-            "time": "2014-09-10 10:20:38"
+            "time": "2014-09-11 10:31:49"
         },
         {
             "name": "npmweb/environment-banner",
