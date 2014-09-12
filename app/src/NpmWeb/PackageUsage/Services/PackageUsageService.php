@@ -25,11 +25,13 @@ class PackageUsageService implements PackageUsageServiceInterface {
     public function updateUsage( $owner ) {
         $packageUsage = [];
 
-        $repoNames = $this->git->getReposOwnedBy($owner,'php');
+        $repos = $this->git->getReposOwnedBy($owner,'php');
 
-        foreach( $repoNames as $repoName ) {
+        foreach( $repos as $repo ) {
+            $repoName = $repo->name;
+            $repoUrl = $repo->url;
             $composerConfig = $this->gitComposer->getPackageInfo( "$owner/$repoName", array(
-                'repo' => "git@bitbucket.org:$owner/$repoName"
+                'repo' => $repoUrl,
             ));
 
             // TODO cdn-helper not getting here

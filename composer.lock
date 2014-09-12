@@ -954,12 +954,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/packagist-api.git",
-                "reference": "d29b260c9b9ccf536b0f7f876c879650c0c5d8e5"
+                "reference": "d14c2164055a7ae255d06aff0650a82f5ab56de1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/packagist-api/zipball/d29b260c9b9ccf536b0f7f876c879650c0c5d8e5",
-                "reference": "d29b260c9b9ccf536b0f7f876c879650c0c5d8e5",
+                "url": "https://api.github.com/repos/KnpLabs/packagist-api/zipball/d14c2164055a7ae255d06aff0650a82f5ab56de1",
+                "reference": "d14c2164055a7ae255d06aff0650a82f5ab56de1",
                 "shasum": ""
             },
             "require": {
@@ -969,7 +969,7 @@
             },
             "require-dev": {
                 "phpspec/php-diff": "*@dev",
-                "phpspec/phpspec2": "1.0.*@dev"
+                "phpspec/phpspec": "~2.0"
             },
             "type": "library",
             "extra": {
@@ -999,7 +999,7 @@
                 "composer",
                 "packagist"
             ],
-            "time": "2014-06-04 09:18:30"
+            "time": "2014-09-12 07:36:15"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -1129,12 +1129,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "d57b430c2531ca8dc6b75e18ef94003436a731de"
+                "reference": "619690d7f13d9faf85efd1fa29ec199bb15ff6a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/d57b430c2531ca8dc6b75e18ef94003436a731de",
-                "reference": "d57b430c2531ca8dc6b75e18ef94003436a731de",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/619690d7f13d9faf85efd1fa29ec199bb15ff6a1",
+                "reference": "619690d7f13d9faf85efd1fa29ec199bb15ff6a1",
                 "shasum": ""
             },
             "require": {
@@ -1236,7 +1236,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-09-11 01:18:00"
+            "time": "2014-09-11 14:10:29"
         },
         {
             "name": "laravel/laravel",
@@ -1401,12 +1401,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "7a3789f1a9a9b5588279ee29ec285770e2d14882"
+                "reference": "fd064dac6c15e1521cbe136ec32d0af260f92e1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/7a3789f1a9a9b5588279ee29ec285770e2d14882",
-                "reference": "7a3789f1a9a9b5588279ee29ec285770e2d14882",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/fd064dac6c15e1521cbe136ec32d0af260f92e1f",
+                "reference": "fd064dac6c15e1521cbe136ec32d0af260f92e1f",
                 "shasum": ""
             },
             "require": {
@@ -1438,7 +1438,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2014-08-31 15:05:11"
+            "time": "2014-09-11 22:39:59"
         },
         {
             "name": "npmweb/bitbucket-api",
@@ -1491,12 +1491,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/composer-service.git",
-                "reference": "edb446b16732eee55b225f1b9e9e036b59076ccd"
+                "reference": "f723d0be1e6a5c8e747e442b95dab2712085bab7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/composer-service/zipball/edb446b16732eee55b225f1b9e9e036b59076ccd",
-                "reference": "edb446b16732eee55b225f1b9e9e036b59076ccd",
+                "url": "https://api.github.com/repos/npmweb/composer-service/zipball/f723d0be1e6a5c8e747e442b95dab2712085bab7",
+                "reference": "f723d0be1e6a5c8e747e442b95dab2712085bab7",
                 "shasum": ""
             },
             "require": {
@@ -1523,7 +1523,7 @@
                 "source": "https://github.com/npmweb/composer-service/tree/master",
                 "issues": "https://github.com/npmweb/composer-service/issues"
             },
-            "time": "2014-09-11 10:31:49"
+            "time": "2014-09-12 10:34:57"
         },
         {
             "name": "npmweb/environment-banner",
@@ -1566,12 +1566,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/git-api-client.git",
-                "reference": "cd8ed6eac6aab7e2a2ea77865c82782c17dfc33e"
+                "reference": "06d6417a3930bd3fab2a96a19141bd13adf4da1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/git-api-client/zipball/cd8ed6eac6aab7e2a2ea77865c82782c17dfc33e",
-                "reference": "cd8ed6eac6aab7e2a2ea77865c82782c17dfc33e",
+                "url": "https://api.github.com/repos/npmweb/git-api-client/zipball/06d6417a3930bd3fab2a96a19141bd13adf4da1e",
+                "reference": "06d6417a3930bd3fab2a96a19141bd13adf4da1e",
                 "shasum": ""
             },
             "require": {
@@ -1597,7 +1597,7 @@
                 "source": "https://github.com/npmweb/git-api-client/tree/master",
                 "issues": "https://github.com/npmweb/git-api-client/issues"
             },
-            "time": "2014-08-27 12:18:13"
+            "time": "2014-09-12 10:34:34"
         },
         {
             "name": "npmweb/laravel-test",
