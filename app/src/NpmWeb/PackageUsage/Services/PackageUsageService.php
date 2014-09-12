@@ -75,10 +75,14 @@ class PackageUsageService implements PackageUsageServiceInterface {
         }
 
         // save to disk
+        $data = array(
+            'lastUpdate' => date('Y-m-d g:i a'),
+            'packageUsage' => $packageUsage,
+        );
         $dir = storage_path().'/usage/';
         if( !file_exists($dir) ) { mkdir($dir); }
         $fh = fopen( $dir.'usage.json', 'w' );
-        fwrite( $fh, json_encode($packageUsage) );
+        fwrite( $fh, json_encode($data) );
         fclose($fh);
     }
 

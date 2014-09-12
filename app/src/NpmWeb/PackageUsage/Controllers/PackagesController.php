@@ -27,17 +27,12 @@ class PackagesController extends \Controller {
      */
     public function index()
     {
-        if( Request::wantsJson() ) {
-            $packages = array_values((array)$this->packages->getUsage());
-            return Response::json([
-                'status' => 'success',
-                'models' => $packages,
-            ]);
-        } else {
-            return View::make($this->modelName.'.index', [
-                'username' => getenv('BITBUCKET_USER'),
-            ]);
-        }
+        $result = $this->packages->getUsage();
+        return View::make($this->modelName.'.index', [
+            'username' => getenv('BITBUCKET_USER'),
+            'lastUpdated' => $result->lastUpdate,
+            'packages' => array_values((array)$result->packageUsage),
+        ]);
     }
 
     public function test()

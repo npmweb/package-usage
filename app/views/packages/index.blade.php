@@ -5,7 +5,7 @@
         <div class="columns">
             <h2>Packages</h2>
                 <p>
-                    Composer packages used across all of <a href="https://bitbucket.org/{{{ $username }}}">{{{ $username }}}</a>'s applications.
+                    Composer packages used across all of <a href="https://bitbucket.org/{{{ $username }}}">{{{ $username }}}</a>'s applications. Data last updated {{{ $lastUpdated }}}.
                     <a href="https://github.com/npmweb/package-usage">View on GitHub.</a>
                 </p>
 
@@ -40,24 +40,29 @@
 @stop
 
 @section('js')
+<script type="application/json" id="packageData">{{{ json_encode($packages) }}}</script>
 <script type="text/javascript">
 var pu = pu || {};
 pu.baseUrl = {{ json_encode(url()) }};
 
-require(['backbone','jquery','../js/utils'], function(Backbone,$) {
+require(['underscore','backbone','jquery','../js/utils'], function(_,Backbone,$) {
+
+    pu.packages =JSON.parse(_.unescape($('#packageData').text()));
 
     pu.Package = Backbone.Model.extend({});
 
     pu.PackageCollection = Backbone.Collection.extend({
         model: pu.Package,
         url: pu.baseUrl,
-        initialize: function() {
-            this.fetch({reset:true});
+        initialize: function(data) {
+            this.fullPackages = data;
+            this.reset(this.fullPackages);
+            // this.fetch({reset:true});
         },
-        parse: function(response) {
-            this.fullPackages = response.models;
-            return this.fullPackages;
-        },
+        // parse: function(response) {
+        //     this.fullPackages = response.models;
+        //     return this.fullPackages;
+        // },
         filter: function(query) {
             var terms = query.toLowerCase().split(/\W+/);
             var filteredPackages = _.filter( this.fullPackages, function(pkg) {
@@ -99,6 +104,7 @@ require(['backbone','jquery','../js/utils'], function(Backbone,$) {
         initialize: function( packageCollection ) {
             this.packageCollection = packageCollection;
             this.packageCollection.on('reset', this.render, this );
+            this.render();
         },
         render: function() {
             this.$el.html( _.template( this.template, {
@@ -114,7 +120,7 @@ require(['backbone','jquery','../js/utils'], function(Backbone,$) {
         }
     });
 
-    pu.packageCollection = new pu.PackageCollection();
+    pu.packageCollection = new pu.PackageCollection( pu.packages );
     pu.searchView = new pu.SearchView( pu.packageCollection );
     pu.packageListView = new pu.PackageListView( pu.packageCollection );
 });
