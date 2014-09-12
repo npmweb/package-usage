@@ -5,7 +5,7 @@
         <div class="columns">
             <h2>Packages</h2>
                 <p>
-                    Composer packages used across all of <a href="https://bitbucket.org/{{{ $username }}}">{{{ $username }}}</a>'s applications. Data last updated {{{ $lastUpdated }}}.
+                    Composer packages used across all of <a href="https://bitbucket.org/{{{ $username }}}">{{{ $username }}}</a>'s applications. Data last updated {{{ $lastUpdated->format('D M j \a\t g:i a') }}}.
                     <a href="https://github.com/npmweb/package-usage">View on GitHub.</a>
                 </p>
 

@@ -2,6 +2,7 @@
 
 namespace NpmWeb\PackageUsage\Controllers;
 
+use DateTime;
 use Request;
 use Response;
 use View;
@@ -30,7 +31,7 @@ class PackagesController extends \Controller {
         $result = $this->packages->getUsage();
         return View::make($this->modelName.'.index', [
             'username' => getenv('BITBUCKET_USER'),
-            'lastUpdated' => $result->lastUpdate,
+            'lastUpdated' => new DateTime($result->lastUpdate),
             'packages' => array_values((array)$result->packageUsage),
         ]);
     }
