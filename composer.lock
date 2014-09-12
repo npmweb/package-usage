@@ -1491,12 +1491,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/npmweb/composer-service.git",
-                "reference": "f723d0be1e6a5c8e747e442b95dab2712085bab7"
+                "reference": "0cec2362d6610de3be815dcb2b1efbe7b8a7b38f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/npmweb/composer-service/zipball/f723d0be1e6a5c8e747e442b95dab2712085bab7",
-                "reference": "f723d0be1e6a5c8e747e442b95dab2712085bab7",
+                "url": "https://api.github.com/repos/npmweb/composer-service/zipball/0cec2362d6610de3be815dcb2b1efbe7b8a7b38f",
+                "reference": "0cec2362d6610de3be815dcb2b1efbe7b8a7b38f",
                 "shasum": ""
             },
             "require": {
@@ -1523,7 +1523,7 @@
                 "source": "https://github.com/npmweb/composer-service/tree/master",
                 "issues": "https://github.com/npmweb/composer-service/issues"
             },
-            "time": "2014-09-12 10:34:57"
+            "time": "2014-09-12 11:10:45"
         },
         {
             "name": "npmweb/environment-banner",
